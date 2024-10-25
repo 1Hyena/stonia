@@ -60,12 +60,13 @@ and comment each other's adventures.
 |              |                                                               |
 | -----------: | :-----------------------------------------------------------: |
 |              |             ![Map of Coliseum][img-map-coliseum]              |
-|              |              Map of **Coliseum**, February 2004               |
-|              |    Click [here][txt-map-coliseum] to view the map in ASCII.   |
+|              |       Map of [Coliseum][txt-map-coliseum], February 2004      |
 | Area·file:   | thiefsforest.are                                              |
-| Memberland→  | dnd4e14ne5ne2nen2en4en2e(open hiddendoor)2de2s2eueu2es3enunw  |
+| Memberland→  | dnd4e14ne5ne2nen2en4en2e                                      |
+|              | open hidden door                                              |
+|              | 2de2s2eueu2es3enunw                                           |
 
-[img-map-coliseum]: ./files/maps/coliseum.webp "Map of Coliseum"
+[img-map-coliseum]: ./files/maps/coliseum.webp "map of Coliseum"
 [txt-map-coliseum]: ./files/maps/coliseum.txt "ASCII map of Coliseum"
 
 
@@ -74,12 +75,11 @@ and comment each other's adventures.
 |              |                                                               |
 | -----------: | :-----------------------------------------------------------: |
 |              |       ![Map of Grey Mountains][img-map-greymountains]         |
-|              |            Map of **Grey Mountains**, April 2004              |
-|              | Click [here][txt-map-greymountains] to view the map in ASCII. |
+|              |   Map of [Grey Mountains][txt-map-greymountains], April 2004  |
 | Area·file:   | greymountains.are                                             |
 
-[img-map-greymountains]: ./files/maps/greymountains.webp "Map of Grey Mountains"
-[txt-map-greymountains]: ./files/maps/greymountains.txt "ASCII map of Grey Mountains"
+[img-map-greymountains]: ./files/maps/greymountains.webp "map of Grey Mountains"
+[txt-map-greymountains]: ./files/maps/greymountains.txt "ASCII map"
 
 # Links ########################################################################
 
