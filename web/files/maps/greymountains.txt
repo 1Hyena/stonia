@@ -1,0 +1,41 @@
+
+
+                      To Titan Stronghold
+                              |
+                              o
+                              |
+    o--o                   o--o                  To Goblin Village
+    |   \                  |  |                    /
+    |    o              o--o  o--o--o          o--o
+    |    |              |           |          |
+ o--o o--G--o     o--o--o  o-o-o    o--o-o     o
+    |    |  |     |   \    | | |  /      |     |
+    |    o  o--o--o    o-o-o o o-o       o--o--o
+    |   /      |  |        |     |       |  |
+    o--o    o--o  o--o--o  o-o-o-o       o  o
+            |        /  |    |           |  |
+            o        \  |    o           o  o---o
+            | \      /  |                | \    |
+   C  o--o--o  o-o--o   o--o       o--o--o  o   o----o
+   |  |     |  |    |       \     /         |        |
+o--o--o     |  o-o  o--o     o-o-o          o        |
+            |    |     |     | | |          |        o
+            o--o o--o  o     o-o-o      o-o-o-o      |
+               |    |  |     | | |      | x   |   o--o
+               o--o o--o     o-o-o      o-o   o-o |
+                  |   /     /     \       |   |   |
+                  o--o--o--o       o      o-o-o   |
+                        |          |          |   |
+                        |      o-o o---o---o  o   |
+                        o      | |  \      |    \ |
+                        |    o-o o---o---o |      o--o
+                     o--o--o   |         | |      |   \  To Swamp
+                     |     |   |         | o---o--o
+                  o--o     |   |         |     |
+                  |        |   o--o--o---o   o-o
+                  o        |  /      |       |
+                 /         o-o---o   o   o---o
+    To Little Haven              |       |
+                                 o---o---o
+G-Grond
+C-Carpenter

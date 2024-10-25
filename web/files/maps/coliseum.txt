@@ -1,0 +1,31 @@
+N - Near the waterfall
+D - Death Trap
+C - Camping place (Eremiit)
+G - Glade (3 brigandi)
+
+
+           1-- 
+Brittish  /
+Fort  <--N--D
+        /                              
+       o                   C            
+      /                    |         /
+     o--o--C         o--o--o        2
+        |           /      |        |
+        o       o--o       o--o--o--o
+        |      /   
+        o--o--o
+                               o
+                               |
+                            o--o
+                            |  |
+                            o--o--o     o--o
+                            |  |  |     |  |
+          o--o--o--o--o--o--o--o--o--G--o--o--o
+          |                 |  |  |     |  |
+   1--o   o                 o--o--o     o--o
+  /  /    |                 |  |       /
+    o--o--o                 o--o      2
+                               |      |
+                               o
+
