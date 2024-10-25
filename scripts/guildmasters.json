@@ -1,0 +1,2201 @@
+{
+  "1": [
+    {
+      "vnum": 5112,
+      "short_desc": "the drow Mistress",
+      "area": "Drow Caves (Drkside/Waim)"
+    },
+    {
+      "vnum": 1364,
+      "short_desc": "The Grand Mistress",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "2": [
+    {
+      "vnum": 631,
+      "short_desc": "The Ancient Gold Dragon",
+      "area": "New Ofcol (Hatchet)"
+    }
+  ],
+  "3": [
+    {
+      "vnum": 3405,
+      "short_desc": "a priest",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9501,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6509,
+      "short_desc": "the dwarven doctor",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7820,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "4": [
+    {
+      "vnum": 3405,
+      "short_desc": "a priest",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9596,
+      "short_desc": "the stone golem",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 8716,
+      "short_desc": "Clerical Dwarf",
+      "area": "Khanlardin (Drai/Waim)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 628,
+      "short_desc": "Priestess of Ofcol",
+      "area": "New Ofcol (Hatchet)"
+    },
+    {
+      "vnum": 10405,
+      "short_desc": "Titan Priest",
+      "area": "Titans' Stronghold (Seem)"
+    }
+  ],
+  "5": [
+    {
+      "vnum": 2645,
+      "short_desc": "Lord Necromancer of Hell",
+      "area": "Descent to Hell (Strahd/RalfII/Waim/Defarge)"
+    },
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 7540,
+      "short_desc": "the palace priest",
+      "area": "Town of Gerighelm (Zarchon/RalfII)"
+    }
+  ],
+  "6": [
+    {
+      "vnum": 8898,
+      "short_desc": "the High Priest",
+      "area": "Khanlardin (Drai/Waim)"
+    }
+  ],
+  "7": [
+    {
+      "vnum": 3421,
+      "short_desc": "an old ghost",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9500,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 7819,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 4100,
+      "short_desc": "a mage",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "8": [
+    {
+      "vnum": 8517,
+      "short_desc": "an elven alchemist",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    }
+  ],
+  "9": [
+    {
+      "vnum": 7807,
+      "short_desc": "an elven elder",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 602,
+      "short_desc": "Zurmos",
+      "area": "New Ofcol (Hatchet)"
+    }
+  ],
+  "10": [
+    {
+      "vnum": 3405,
+      "short_desc": "a priest",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 7807,
+      "short_desc": "an elven elder",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "11": [
+    {
+      "vnum": 3423,
+      "short_desc": "the skeleton",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 3021,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4184,
+      "short_desc": "an old orkish shaman",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "12": [
+    {
+      "vnum": 3423,
+      "short_desc": "the skeleton",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 3021,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4184,
+      "short_desc": "an old orkish shaman",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "13": [
+    {
+      "vnum": 3423,
+      "short_desc": "the skeleton",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 3021,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4184,
+      "short_desc": "an old orkish shaman",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "14": [
+    {
+      "vnum": 6400,
+      "short_desc": "The Dragon King",
+      "area": "Earthsea (Segoy)"
+    },
+    {
+      "vnum": 8517,
+      "short_desc": "an elven alchemist",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    }
+  ],
+  "15": [
+    {
+      "vnum": 1362,
+      "short_desc": "The master of goodness",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "16": [
+    {
+      "vnum": 1359,
+      "short_desc": "the master of the black robes",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "17": [
+    {
+      "vnum": 1338,
+      "short_desc": "the master charmer",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "18": [
+    {
+      "vnum": 3421,
+      "short_desc": "an old ghost",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9500,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 7819,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 4100,
+      "short_desc": "a mage",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "19": [
+    {
+      "vnum": 2634,
+      "short_desc": "ice devil",
+      "area": "Descent to Hell (Strahd/RalfII/Waim/Defarge)"
+    }
+  ],
+  "20": [
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 5317,
+      "short_desc": "an old wizard",
+      "area": "Old Thalos (Kahn)"
+    }
+  ],
+  "21": [
+    {
+      "vnum": 9500,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6504,
+      "short_desc": "Granite Head",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 8514,
+      "short_desc": "an elven mage",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    },
+    {
+      "vnum": 7819,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 4163,
+      "short_desc": "Grychmak",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 401,
+      "short_desc": "The Reaper of the Dead",
+      "area": "Purgatory (Envy/RalfII)"
+    }
+  ],
+  "22": [
+    {
+      "vnum": 8903,
+      "short_desc": "an elder druidess",
+      "area": "Holy Grove (Alfa)"
+    }
+  ],
+  "23": [
+    {
+      "vnum": 3421,
+      "short_desc": "an old ghost",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 3426,
+      "short_desc": "a lich",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9514,
+      "short_desc": "Vera the veggie lady",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6509,
+      "short_desc": "the dwarven doctor",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 8512,
+      "short_desc": "a cook",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    },
+    {
+      "vnum": 7820,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "24": [
+    {
+      "vnum": 3421,
+      "short_desc": "an old ghost",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9514,
+      "short_desc": "Vera the veggie lady",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 7820,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    }
+  ],
+  "25": [
+    {
+      "vnum": 3421,
+      "short_desc": "an old ghost",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 6509,
+      "short_desc": "the dwarven doctor",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 8512,
+      "short_desc": "a cook",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    },
+    {
+      "vnum": 7820,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "26": [
+    {
+      "vnum": 3405,
+      "short_desc": "a priest",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 7820,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3021,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "27": [
+    {
+      "vnum": 3405,
+      "short_desc": "a priest",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9501,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6509,
+      "short_desc": "the dwarven doctor",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7820,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 8750,
+      "short_desc": "the dwarven healer",
+      "area": "Khanlardin (Drai/Waim)"
+    },
+    {
+      "vnum": 3021,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1104,
+      "short_desc": "a nursemaid",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "28": [
+    {
+      "vnum": 7540,
+      "short_desc": "the palace priest",
+      "area": "Town of Gerighelm (Zarchon/RalfII)"
+    },
+    {
+      "vnum": 5307,
+      "short_desc": "the priest of Thalos",
+      "area": "Old Thalos (Kahn)"
+    }
+  ],
+  "29": [
+    {
+      "vnum": 3405,
+      "short_desc": "a priest",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9501,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6509,
+      "short_desc": "the dwarven doctor",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7820,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3021,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1104,
+      "short_desc": "a nursemaid",
+      "area": "Shire (Poohb/Waim)"
+    },
+    {
+      "vnum": 10405,
+      "short_desc": "Titan Priest",
+      "area": "Titans' Stronghold (Seem)"
+    }
+  ],
+  "30": [
+    {
+      "vnum": 3021,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 5307,
+      "short_desc": "the priest of Thalos",
+      "area": "Old Thalos (Kahn)"
+    }
+  ],
+  "31": [
+    {
+      "vnum": 3405,
+      "short_desc": "a priest",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9501,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6509,
+      "short_desc": "the dwarven doctor",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7820,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3021,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4175,
+      "short_desc": "an orkish healer",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1104,
+      "short_desc": "a nursemaid",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "32": [
+    {
+      "vnum": 6606,
+      "short_desc": "dark-knight",
+      "area": "Demons' Keep (Bad & Cringe)"
+    },
+    {
+      "vnum": 2645,
+      "short_desc": "Lord Necromancer of Hell",
+      "area": "Descent to Hell (Strahd/RalfII/Waim/Defarge)"
+    }
+  ],
+  "34": [
+    {
+      "vnum": 11131,
+      "short_desc": "Baazguargh the Black Numenorean",
+      "area": "Barad-Dur (Aragorn)"
+    },
+    {
+      "vnum": 6608,
+      "short_desc": "orkish priest",
+      "area": "Demons' Keep (Bad & Cringe)"
+    },
+    {
+      "vnum": 4264,
+      "short_desc": "Seth's priest",
+      "area": "Temple of Seth (XTBart / Zarquon)"
+    }
+  ],
+  "35": [
+    {
+      "vnum": 1356,
+      "short_desc": "the master of Neutrality",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "36": [
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3000,
+      "short_desc": "the wizard",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "37": [
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3000,
+      "short_desc": "the wizard",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "38": [
+    {
+      "vnum": 1348,
+      "short_desc": "the master of illusions",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "39": [
+    {
+      "vnum": 5316,
+      "short_desc": "a young scholar",
+      "area": "Old Thalos (Kahn)"
+    }
+  ],
+  "40": [
+    {
+      "vnum": 6706,
+      "short_desc": "Priestess",
+      "area": "Valley of Baldor (Crom/Cody)"
+    },
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    }
+  ],
+  "41": [
+    {
+      "vnum": 6705,
+      "short_desc": "Shaman",
+      "area": "Valley of Baldor (Crom/Cody)"
+    },
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    }
+  ],
+  "42": [
+    {
+      "vnum": 8514,
+      "short_desc": "an elven mage",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    }
+  ],
+  "43": [
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 2330,
+      "short_desc": "Nasturn",
+      "area": "Keep of Mahn-Tor (Chris)"
+    }
+  ],
+  "44": [
+    {
+      "vnum": 1334,
+      "short_desc": "the Enchanter",
+      "area": "High Tower of Sorcery (Anon)"
+    },
+    {
+      "vnum": 1364,
+      "short_desc": "The Grand Mistress",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "45": [
+    {
+      "vnum": 1334,
+      "short_desc": "the Enchanter",
+      "area": "High Tower of Sorcery (Anon)"
+    },
+    {
+      "vnum": 1364,
+      "short_desc": "The Grand Mistress",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "46": [
+    {
+      "vnum": 3404,
+      "short_desc": "The Vampire Lord",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    }
+  ],
+  "47": [
+    {
+      "vnum": 3020,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "48": [
+    {
+      "vnum": 1329,
+      "short_desc": "an aged wizard",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "49": [
+    {
+      "vnum": 1340,
+      "short_desc": "the master spell binder",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "50": [
+    {
+      "vnum": 1340,
+      "short_desc": "the master spell binder",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "51": [
+    {
+      "vnum": 2221,
+      "short_desc": "the Great Red Dragon",
+      "area": "Dragon Tower (Wench/Cody)"
+    }
+  ],
+  "52": [
+    {
+      "vnum": 9305,
+      "short_desc": "a demon",
+      "area": "Caves of Balrog (Anon/Cody)"
+    },
+    {
+      "vnum": 8514,
+      "short_desc": "an elven mage",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    },
+    {
+      "vnum": 1100,
+      "short_desc": "Gandalf",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "53": [
+    {
+      "vnum": 2668,
+      "short_desc": "Greater Fire Demon",
+      "area": "Descent to Hell (Strahd/RalfII/Waim/Defarge)"
+    }
+  ],
+  "54": [
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 1200,
+      "short_desc": "Heimdall",
+      "area": "Immortal Zone (Stonia)"
+    }
+  ],
+  "55": [
+    {
+      "vnum": 1336,
+      "short_desc": "the Mad Alchemist",
+      "area": "High Tower of Sorcery (Anon)"
+    },
+    {
+      "vnum": 8716,
+      "short_desc": "Clerical Dwarf",
+      "area": "Khanlardin (Drai/Waim)"
+    },
+    {
+      "vnum": 10405,
+      "short_desc": "Titan Priest",
+      "area": "Titans' Stronghold (Seem)"
+    }
+  ],
+  "56": [
+    {
+      "vnum": 2223,
+      "short_desc": "the Great White Dragon",
+      "area": "Dragon Tower (Wench/Cody)"
+    }
+  ],
+  "57": [
+    {
+      "vnum": 2225,
+      "short_desc": "the Ancient Green Dragon",
+      "area": "Dragon Tower (Wench/Cody)"
+    }
+  ],
+  "58": [
+    {
+      "vnum": 1200,
+      "short_desc": "Heimdall",
+      "area": "Immortal Zone (Stonia)"
+    }
+  ],
+  "59": [
+    {
+      "vnum": 2203,
+      "short_desc": "a powerful mage",
+      "area": "Dragon Tower (Wench/Cody)"
+    }
+  ],
+  "60": [
+    {
+      "vnum": 6705,
+      "short_desc": "Shaman",
+      "area": "Valley of Baldor (Crom/Cody)"
+    },
+    {
+      "vnum": 6706,
+      "short_desc": "Priestess",
+      "area": "Valley of Baldor (Crom/Cody)"
+    }
+  ],
+  "61": [
+    {
+      "vnum": 1327,
+      "short_desc": "the battle mistress",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "62": [
+    {
+      "vnum": 9830,
+      "short_desc": "a healer",
+      "area": "Jeddyland forest & town (Sabbath)"
+    }
+  ],
+  "64": [
+    {
+      "vnum": 1364,
+      "short_desc": "The Grand Mistress",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "65": [
+    {
+      "vnum": 5315,
+      "short_desc": "the librarian",
+      "area": "Old Thalos (Kahn)"
+    }
+  ],
+  "66": [
+    {
+      "vnum": 1328,
+      "short_desc": "a spell teacher",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "67": [
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 1306,
+      "short_desc": "Tatorious",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "68": [
+    {
+      "vnum": 1356,
+      "short_desc": "the master of Neutrality",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "69": [
+    {
+      "vnum": 9540,
+      "short_desc": "Raistlin",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 1100,
+      "short_desc": "Gandalf",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "70": [
+    {
+      "vnum": 10414,
+      "short_desc": "Ancient Wyrm",
+      "area": "Titans' Stronghold (Seem)"
+    }
+  ],
+  "71": [
+    {
+      "vnum": 4843,
+      "short_desc": "Magnus wizard",
+      "area": "Town of Solea (Strahd/RII/Waim)"
+    }
+  ],
+  "72": [
+    {
+      "vnum": 4843,
+      "short_desc": "Magnus wizard",
+      "area": "Town of Solea (Strahd/RII/Waim)"
+    }
+  ],
+  "73": [
+    {
+      "vnum": 3421,
+      "short_desc": "an old ghost",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9500,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 7819,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 4100,
+      "short_desc": "a mage",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "74": [
+    {
+      "vnum": 4301,
+      "short_desc": "the eremite",
+      "area": "Thieves Forest (Kent)"
+    }
+  ],
+  "75": [
+    {
+      "vnum": 1306,
+      "short_desc": "Tatorious",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "76": [
+    {
+      "vnum": 5327,
+      "short_desc": "a druid",
+      "area": "Old Thalos (Kahn)"
+    }
+  ],
+  "77": [
+    {
+      "vnum": 9107,
+      "short_desc": "the ugly, wicked witch",
+      "area": "Clouds in the Air (Dylan)"
+    }
+  ],
+  "78": [
+    {
+      "vnum": 6207,
+      "short_desc": "elder druid",
+      "area": "Arachnos (Seem)"
+    }
+  ],
+  "79": [
+    {
+      "vnum": 3421,
+      "short_desc": "an old ghost",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 1365,
+      "short_desc": "a wandering wizard",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "80": [
+    {
+      "vnum": 1329,
+      "short_desc": "an aged wizard",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "81": [
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 8902,
+      "short_desc": "an elder druid",
+      "area": "Holy Grove (Alfa)"
+    }
+  ],
+  "82": [
+    {
+      "vnum": 2426,
+      "short_desc": "Jaana the Druid",
+      "area": "British Valley (Mrgs)"
+    }
+  ],
+  "83": [
+    {
+      "vnum": 1364,
+      "short_desc": "The Grand Mistress",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "84": [
+    {
+      "vnum": 4303,
+      "short_desc": "the eremite",
+      "area": "Thieves Forest (Kent)"
+    }
+  ],
+  "85": [
+    {
+      "vnum": 13004,
+      "short_desc": "a druidess",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 301,
+      "short_desc": "Sorbus the Hermit",
+      "area": "Plains of the North (Copper/Waim)"
+    },
+    {
+      "vnum": 5510,
+      "short_desc": "guard troll",
+      "area": "Troll Caves (Cringe)"
+    }
+  ],
+  "86": [
+    {
+      "vnum": 3421,
+      "short_desc": "an old ghost",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9500,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 7819,
+      "short_desc": "the guildmaster",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 4100,
+      "short_desc": "a mage",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "87": [
+    {
+      "vnum": 5103,
+      "short_desc": "the drow mage noble",
+      "area": "Drow Caves (Drkside/Waim)"
+    },
+    {
+      "vnum": 13003,
+      "short_desc": "a shaman",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 4264,
+      "short_desc": "Seth's priest",
+      "area": "Temple of Seth (XTBart / Zarquon)"
+    }
+  ],
+  "88": [
+    {
+      "vnum": 300,
+      "short_desc": "Aruncus the Druid",
+      "area": "Plains of the North (Copper/Waim)"
+    }
+  ],
+  "89": [
+    {
+      "vnum": 1337,
+      "short_desc": "the master summoner",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "90": [
+    {
+      "vnum": 1365,
+      "short_desc": "a wandering wizard",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "91": [
+    {
+      "vnum": 5317,
+      "short_desc": "an old wizard",
+      "area": "Old Thalos (Kahn)"
+    }
+  ],
+  "92": [
+    {
+      "vnum": 1352,
+      "short_desc": "an ugly witch",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "95": [
+    {
+      "vnum": 6701,
+      "short_desc": "old wizard",
+      "area": "Valley of Baldor (Crom/Cody)"
+    }
+  ],
+  "96": [
+    {
+      "vnum": 9528,
+      "short_desc": "the statue of Taara",
+      "area": "Dorpat (Anon)"
+    }
+  ],
+  "97": [
+    {
+      "vnum": 4161,
+      "short_desc": "guildmaster",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "98": [
+    {
+      "vnum": 8110,
+      "short_desc": "a guildmaster",
+      "area": "Grey Mountains (Cody)"
+    }
+  ],
+  "99": [
+    {
+      "vnum": 4266,
+      "short_desc": "Gredhon",
+      "area": "Temple of Seth (XTBart / Zarquon)"
+    }
+  ],
+  "100": [
+    {
+      "vnum": 8910,
+      "short_desc": "a druidess",
+      "area": "Holy Grove (Alfa)"
+    }
+  ],
+  "101": [
+    {
+      "vnum": 1353,
+      "short_desc": "the Librarian",
+      "area": "High Tower of Sorcery (Anon)"
+    }
+  ],
+  "102": [
+    {
+      "vnum": 7811,
+      "short_desc": "Talemon",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    }
+  ],
+  "103": [
+    {
+      "vnum": 7811,
+      "short_desc": "Talemon",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    }
+  ],
+  "104": [
+    {
+      "vnum": 11116,
+      "short_desc": "the orkish assassin",
+      "area": "Barad-Dur (Aragorn)"
+    },
+    {
+      "vnum": 6402,
+      "short_desc": "Human ranger",
+      "area": "Earthsea (Segoy)"
+    },
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 8004,
+      "short_desc": "a rogue",
+      "area": "Gypsy Village (Celestian/Cody)"
+    },
+    {
+      "vnum": 8717,
+      "short_desc": "Kaelith",
+      "area": "Khanlardin (Drai/Waim)"
+    },
+    {
+      "vnum": 8726,
+      "short_desc": "the assassin",
+      "area": "Khanlardin (Drai/Waim)"
+    },
+    {
+      "vnum": 4182,
+      "short_desc": "an assassin",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1101,
+      "short_desc": "Bilbo",
+      "area": "Shire (Poohb/Waim)"
+    },
+    {
+      "vnum": 8405,
+      "short_desc": "an orkish scout",
+      "area": "Plain Wastelands (Sauron)"
+    }
+  ],
+  "105": [
+    {
+      "vnum": 9502,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6525,
+      "short_desc": "the guildmaster",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3023,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4166,
+      "short_desc": "orkish chieftain",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1112,
+      "short_desc": "the Thain",
+      "area": "Shire (Poohb/Waim)"
+    },
+    {
+      "vnum": 1121,
+      "short_desc": "the battle master",
+      "area": "Shire (Poohb/Waim)"
+    },
+    {
+      "vnum": 5509,
+      "short_desc": "Jotun troll",
+      "area": "Troll Caves (Cringe)"
+    }
+  ],
+  "106": [
+    {
+      "vnum": 6503,
+      "short_desc": "the storekeeper",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 8110,
+      "short_desc": "a guildmaster",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 4166,
+      "short_desc": "orkish chieftain",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1112,
+      "short_desc": "the Thain",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "107": [
+    {
+      "vnum": 5106,
+      "short_desc": "The weapons master",
+      "area": "Drow Caves (Drkside/Waim)"
+    }
+  ],
+  "108": [
+    {
+      "vnum": 9550,
+      "short_desc": "The Sultan",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6503,
+      "short_desc": "the storekeeper",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 8110,
+      "short_desc": "a guildmaster",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 4161,
+      "short_desc": "guildmaster",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "109": [
+    {
+      "vnum": 9519,
+      "short_desc": "the foreman",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6508,
+      "short_desc": "the dwarven mine leader",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 5007,
+      "short_desc": "The nomad commander",
+      "area": "Sands of Sorrow (Anon/Waim)"
+    }
+  ],
+  "110": [
+    {
+      "vnum": 3001,
+      "short_desc": "the baker",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 3002,
+      "short_desc": "the grocer",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "111": [
+    {
+      "vnum": 6607,
+      "short_desc": "Demon Cook",
+      "area": "Demons' Keep (Bad & Cringe)"
+    },
+    {
+      "vnum": 6504,
+      "short_desc": "Granite Head",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 1102,
+      "short_desc": "Farmer Gamgee",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "112": [
+    {
+      "vnum": 5600,
+      "short_desc": "a great goblin",
+      "area": "Iron Mountains (Fred)"
+    }
+  ],
+  "113": [
+    {
+      "vnum": 2436,
+      "short_desc": "Geoffrey the Fighter",
+      "area": "British Valley (Mrgs)"
+    },
+    {
+      "vnum": 2437,
+      "short_desc": "Lord Simon",
+      "area": "British Valley (Mrgs)"
+    }
+  ],
+  "114": [
+    {
+      "vnum": 2437,
+      "short_desc": "Lord Simon",
+      "area": "British Valley (Mrgs)"
+    }
+  ],
+  "115": [
+    {
+      "vnum": 2437,
+      "short_desc": "Lord Simon",
+      "area": "British Valley (Mrgs)"
+    },
+    {
+      "vnum": 4166,
+      "short_desc": "orkish chieftain",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 401,
+      "short_desc": "The Reaper of the Dead",
+      "area": "Purgatory (Envy/RalfII)"
+    }
+  ],
+  "116": [
+    {
+      "vnum": 9503,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 7815,
+      "short_desc": "Eredhol the Valley Chieftain",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3022,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 2332,
+      "short_desc": "Dorgar",
+      "area": "Keep of Mahn-Tor (Chris)"
+    },
+    {
+      "vnum": 4161,
+      "short_desc": "guildmaster",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1121,
+      "short_desc": "the battle master",
+      "area": "Shire (Poohb/Waim)"
+    },
+    {
+      "vnum": 5510,
+      "short_desc": "guard troll",
+      "area": "Troll Caves (Cringe)"
+    }
+  ],
+  "117": [
+    {
+      "vnum": 8100,
+      "short_desc": "Grond",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 3173,
+      "short_desc": "the elite guard colonel",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4166,
+      "short_desc": "orkish chieftain",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "118": [
+    {
+      "vnum": 3420,
+      "short_desc": "a ghost of Ralf-I",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9581,
+      "short_desc": "the high priest",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 4162,
+      "short_desc": "an old orc",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "119": [
+    {
+      "vnum": 3008,
+      "short_desc": "the pet shop boy",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "120": [
+    {
+      "vnum": 2415,
+      "short_desc": "the beggar",
+      "area": "British Valley (Mrgs)"
+    },
+    {
+      "vnum": 9532,
+      "short_desc": "Kareem",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 1305,
+      "short_desc": "Strick the bartender",
+      "area": "High Tower of Sorcery (Anon)"
+    },
+    {
+      "vnum": 8706,
+      "short_desc": "the dwarven merchant",
+      "area": "Khanlardin (Drai/Waim)"
+    },
+    {
+      "vnum": 4178,
+      "short_desc": "trader",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "121": [
+    {
+      "vnum": 2308,
+      "short_desc": "the Ogre Warrior",
+      "area": "Keep of Mahn-Tor (Chris)"
+    },
+    {
+      "vnum": 10903,
+      "short_desc": "Golem",
+      "area": "Molodir's Curse (Seem)"
+    },
+    {
+      "vnum": 5509,
+      "short_desc": "Jotun troll",
+      "area": "Troll Caves (Cringe)"
+    }
+  ],
+  "122": [
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 2332,
+      "short_desc": "Dorgar",
+      "area": "Keep of Mahn-Tor (Chris)"
+    }
+  ],
+  "123": [
+    {
+      "vnum": 2332,
+      "short_desc": "Dorgar",
+      "area": "Keep of Mahn-Tor (Chris)"
+    }
+  ],
+  "125": [
+    {
+      "vnum": 9502,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6525,
+      "short_desc": "the guildmaster",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7815,
+      "short_desc": "Eredhol the Valley Chieftain",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3023,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 5509,
+      "short_desc": "Jotun troll",
+      "area": "Troll Caves (Cringe)"
+    }
+  ],
+  "126": [
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 8100,
+      "short_desc": "Grond",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 3173,
+      "short_desc": "the elite guard colonel",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 5509,
+      "short_desc": "Jotun troll",
+      "area": "Troll Caves (Cringe)"
+    }
+  ],
+  "127": [
+    {
+      "vnum": 6607,
+      "short_desc": "Demon Cook",
+      "area": "Demons' Keep (Bad & Cringe)"
+    },
+    {
+      "vnum": 8512,
+      "short_desc": "a cook",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    }
+  ],
+  "128": [
+    {
+      "vnum": 9579,
+      "short_desc": "Elvira",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 5315,
+      "short_desc": "the librarian",
+      "area": "Old Thalos (Kahn)"
+    }
+  ],
+  "129": [
+    {
+      "vnum": 2426,
+      "short_desc": "Jaana the Druid",
+      "area": "British Valley (Mrgs)"
+    }
+  ],
+  "130": [
+    {
+      "vnum": 9513,
+      "short_desc": "Ahkeem the tailor",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6503,
+      "short_desc": "the storekeeper",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7818,
+      "short_desc": "an elven armourer",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 8110,
+      "short_desc": "a guildmaster",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 3004,
+      "short_desc": "Elinor",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4164,
+      "short_desc": "an armourer",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 401,
+      "short_desc": "The Reaper of the Dead",
+      "area": "Purgatory (Envy/RalfII)"
+    },
+    {
+      "vnum": 1119,
+      "short_desc": "the grocer",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "131": [
+    {
+      "vnum": 9502,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6525,
+      "short_desc": "the guildmaster",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7815,
+      "short_desc": "Eredhol the Valley Chieftain",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3023,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4162,
+      "short_desc": "an old orc",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 5510,
+      "short_desc": "guard troll",
+      "area": "Troll Caves (Cringe)"
+    }
+  ],
+  "132": [
+    {
+      "vnum": 9503,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 3022,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "133": [
+    {
+      "vnum": 9503,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 3022,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "134": [
+    {
+      "vnum": 6503,
+      "short_desc": "the storekeeper",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 8110,
+      "short_desc": "a guildmaster",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 4161,
+      "short_desc": "guildmaster",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "135": [
+    {
+      "vnum": 8100,
+      "short_desc": "Grond",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 3173,
+      "short_desc": "the elite guard colonel",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "136": [
+    {
+      "vnum": 2331,
+      "short_desc": "Belrak",
+      "area": "Keep of Mahn-Tor (Chris)"
+    }
+  ],
+  "137": [
+    {
+      "vnum": 7815,
+      "short_desc": "Eredhol the Valley Chieftain",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 9834,
+      "short_desc": "a hunter",
+      "area": "Jeddyland forest & town (Sabbath)"
+    }
+  ],
+  "138": [
+    {
+      "vnum": 9502,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6525,
+      "short_desc": "the guildmaster",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7815,
+      "short_desc": "Eredhol the Valley Chieftain",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 3023,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4162,
+      "short_desc": "an old orc",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1121,
+      "short_desc": "the battle master",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "139": [
+    {
+      "vnum": 3412,
+      "short_desc": "the spirit of King Crotus",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9502,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6525,
+      "short_desc": "the guildmaster",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7815,
+      "short_desc": "Eredhol the Valley Chieftain",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 8100,
+      "short_desc": "Grond",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 3023,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4161,
+      "short_desc": "guildmaster",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1121,
+      "short_desc": "the battle master",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "140": [
+    {
+      "vnum": 9503,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3022,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "141": [
+    {
+      "vnum": 9503,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 9838,
+      "short_desc": "a jeddy thief",
+      "area": "Jeddyland forest & town (Sabbath)"
+    },
+    {
+      "vnum": 3022,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    }
+  ],
+  "142": [
+    {
+      "vnum": 8100,
+      "short_desc": "Grond",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 3173,
+      "short_desc": "the elite guard colonel",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4166,
+      "short_desc": "orkish chieftain",
+      "area": "Moria (Alfa/Suller)"
+    }
+  ],
+  "143": [
+    {
+      "vnum": 9834,
+      "short_desc": "a hunter",
+      "area": "Jeddyland forest & town (Sabbath)"
+    },
+    {
+      "vnum": 8405,
+      "short_desc": "an orkish scout",
+      "area": "Plain Wastelands (Sauron)"
+    }
+  ],
+  "144": [
+    {
+      "vnum": 13002,
+      "short_desc": "a hunter",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 2332,
+      "short_desc": "Dorgar",
+      "area": "Keep of Mahn-Tor (Chris)"
+    }
+  ],
+  "145": [
+    {
+      "vnum": 6519,
+      "short_desc": "a dwarven innkeeper",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 13001,
+      "short_desc": "a ranger",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 8715,
+      "short_desc": "the stocky dwarven warrior",
+      "area": "Khanlardin (Drai/Waim)"
+    },
+    {
+      "vnum": 2333,
+      "short_desc": "Mahn-Tor",
+      "area": "Keep of Mahn-Tor (Chris)"
+    }
+  ],
+  "146": [
+    {
+      "vnum": 3412,
+      "short_desc": "the spirit of King Crotus",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9503,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 7815,
+      "short_desc": "Eredhol the Valley Chieftain",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13001,
+      "short_desc": "a ranger",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 3022,
+      "short_desc": "the guildmaster",
+      "area": "Lindanise (Diku/RalfII/Saru)"
+    },
+    {
+      "vnum": 4161,
+      "short_desc": "guildmaster",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1101,
+      "short_desc": "Bilbo",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "147": [
+    {
+      "vnum": 8520,
+      "short_desc": "Halforc",
+      "area": "Elven Palace (Mrgs/Seem/Snark)"
+    },
+    {
+      "vnum": 13001,
+      "short_desc": "a ranger",
+      "area": "Enchanted forest (Stok)"
+    }
+  ],
+  "148": [
+    {
+      "vnum": 3412,
+      "short_desc": "the spirit of King Crotus",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9550,
+      "short_desc": "The Sultan",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 13001,
+      "short_desc": "a ranger",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 4161,
+      "short_desc": "guildmaster",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 10400,
+      "short_desc": "Titan's Lord",
+      "area": "Titans' Stronghold (Seem)"
+    },
+    {
+      "vnum": 5509,
+      "short_desc": "Jotun troll",
+      "area": "Troll Caves (Cringe)"
+    }
+  ],
+  "149": [
+    {
+      "vnum": 9500,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 13001,
+      "short_desc": "a ranger",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 401,
+      "short_desc": "The Reaper of the Dead",
+      "area": "Purgatory (Envy/RalfII)"
+    }
+  ],
+  "150": [
+    {
+      "vnum": 13001,
+      "short_desc": "a ranger",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 602,
+      "short_desc": "Zurmos",
+      "area": "New Ofcol (Hatchet)"
+    }
+  ],
+  "151": [
+    {
+      "vnum": 3412,
+      "short_desc": "the spirit of King Crotus",
+      "area": "Chapel Catacombs (Copper/RalfII/Waim)"
+    },
+    {
+      "vnum": 9502,
+      "short_desc": "the guildmaster",
+      "area": "Dorpat (Anon)"
+    },
+    {
+      "vnum": 6525,
+      "short_desc": "the guildmaster",
+      "area": "Dwarven Kingdom (Anon/Cody)"
+    },
+    {
+      "vnum": 7815,
+      "short_desc": "Eredhol the Valley Chieftain",
+      "area": "Elven Valley (Hatchet/Waim/Cody)"
+    },
+    {
+      "vnum": 13001,
+      "short_desc": "a ranger",
+      "area": "Enchanted forest (Stok)"
+    },
+    {
+      "vnum": 8100,
+      "short_desc": "Grond",
+      "area": "Grey Mountains (Cody)"
+    },
+    {
+      "vnum": 4161,
+      "short_desc": "guildmaster",
+      "area": "Moria (Alfa/Suller)"
+    },
+    {
+      "vnum": 1121,
+      "short_desc": "the battle master",
+      "area": "Shire (Poohb/Waim)"
+    }
+  ],
+  "152": [
+    {
+      "vnum": 9303,
+      "short_desc": "a demon",
+      "area": "Caves of Balrog (Anon/Cody)"
+    },
+    {
+      "vnum": 9304,
+      "short_desc": "a demon",
+      "area": "Caves of Balrog (Anon/Cody)"
+    },
+    {
+      "vnum": 13001,
+      "short_desc": "a ranger",
+      "area": "Enchanted forest (Stok)"
+    }
+  ]
+}
