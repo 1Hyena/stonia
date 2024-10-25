@@ -1,0 +1,48 @@
+                           <<>> L I N D A N I S E <<>>
+                           - = == ============= == = -
+                                 Mapped by RalfII
+
+                                       Rainbow Bridge (Asgard and Valhalla)
+                                      /
+          North               Temple Altar
+            |   /Up                 |
+            | /                     |
+     West---+---East                |
+          / |                   Temple of
+    Down/   |                     Taara
+          South                     |
+                                    |   /In the Air   /Defunct Reception
+                                    | /             /
+                     Cleric---Temple Square---Grunting---Bar
+                     Guild      (Fountain)    Boar Inn
+                                    |
+                          Bakery    |    Grocer
+   Northern                 |       |       |                   Northern
+   Lindanise       Turn--Street---Market--Main---Turn           Lindanise
+       |    Magic   |       |     Square    |      |                |
+       |    Shop    |    Armoury    |    Jeweler   | Weaponsmith    |
+       |      |     |               |              |     |          |
+For-<-West--Main---Turn  Rangers---Wide--Stable  Turn----+-Street--East->Cross
+est   Gate    |           Guild   Avenue                 |         Gate  Roads
+       |    Mage                    |    Grand Hotel  Warrior       |
+       |    Guild                   |       /          Guild        |
+      Wall                Cafe---Central--Entrace of               Wall
+      Road                       Square   G-Hotel                  Road
+       |    Leather             (Fountain)       Pet                |
+       |     Shop                   |            Shop  Apothecary   |
+      Wall    |       Blacksmith---Wide           |      |         Wall
+      Road---Poor--Turn           Avenue        Turn-----+-Alley---Road
+       |      |     |     Map       |    Grebe's  |      |          |
+       |  Temple of |     Shop      |    Tavern   |    Warehouse    |
+       | Neutrality |      |      Common    |     |                 |
+       |           Turn--Alley----Square--Dark--Turn                |
+      Wall                 |        |       |     |                Wall
+      Road               Grubby     |   Thieves  Levee             Road
+       |                  Inn      Dump  Guild  (Boats)             |
+       |                          / |             |                 |
+       |                      Lair  |             |                 |
+       |                            |          River of             |
+---> Bridge <------ River ------> South <----- Dorguli ---------> Bridge <---
+       |                          Bridge                            |
+       |                            |                               |
+Southern Lindanise          Southern Lindanise              Southern Lindanise

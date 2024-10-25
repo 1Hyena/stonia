@@ -1,0 +1,35 @@
+                         * * * The Dwarven Kingdom * * *
+                          = = ===================== = =
+                                Untangled by Ezra
+         Reception
+            /       Dwarven
+         Temple     Hospital
+            |          |                                           *Path to
+ Guild---North of---Path by---Path by---Barracks     Guard--Door----King's
+          Shops     Hospital  Barracks  Entrance     House  Kingdom  Castle
+Granite     |          |                   |                   |
+Head's---Path North   Playground         First               Narrow
+Bakery    of Shop                       Barracks              Path
+            |                              |                   |
+         Hide and    Turn               Back of     Bend in--Narrow
+        Tooth Shop--in Road             Barracks     Path     Path
+                       |                    \         |
+                    Path to               Dwarven   Narrow
+                    Village              Catacombs   Path
+                       |                              |
+             Store  *Inside    Entrance     Top of   Dark   *Mine
+             Room---Entrance--To Mountain--Mountain--Path--Entrance
+                \                             |                 \
+               Wine                        Middle of          Dwarven
+              Cellar                       Mountain            Mines
+                  \                            |
+                Dwarven                    Base of
+               Catacombs                   Mountain           North
+                                              |           Up\   |
+                                           Path to            \ |
+                                           Dwarven      West----+----East
+                                           Kingdom              | \
+                                              |                 |   \Down
+                                            Dwarven            South
+                                           Drop-off
+                                          (Day-Care)

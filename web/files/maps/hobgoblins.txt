@@ -1,0 +1,19 @@
+                o
+                |
+                o  S  o
+               /|  |  |
+              o o  S--o--o
+                |  |
+             E--o--o--o--o
+             |  |  |  |  |
+                o  o  S  o
+                |     |  |
+             o--o--o  S  o
+                |     |  |
+             o--o--o  o  T
+                |
+                o
+
+S - Hobgoblin Soldierid (main exp mobs)
+E - Entrance
+T - Throne room (King of hobgoblins)

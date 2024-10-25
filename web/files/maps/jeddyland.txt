@@ -1,0 +1,41 @@
+D - Death Trap
+
+
+          |
+          o          o     o     o     o
+          |          |     |     |     |
+       o--o--o       o     o o   o     o o
+       |  |  |       |     |/    |     |/
+    o--o--o--o--o    o--o--o--o--o--o--o--o--o
+    |  |  |  |  |    |     |     |           |
+    o--o--o--o--o    o     o     D           o       o
+       |  |  |       |     |                 |      /
+       o--o--o       o     o                 o--o--o
+          |/                                 |     |
+          1                                  D     o
+                                             |     |
+                                          D--o--o--o
+           2                                 |
+          /            o                     o       o
+         o            /                      |      /
+        /            o--o--o--o--o--o--o--o--o--o--o
+       1                         |
+                                 o
+                                 |
+                     o     o--o--o--o--o
+                     |           |
+                     o           o       o
+                     |           |      /
+               o--o--o--o--o--o--2--o--o
+                     |          /|
+                     o           o
+                     |           |
+      o--o--o        o     o--o--o--o--o
+      |     |                    |
+      o     o    o     o         o             o
+      |     |   /     /          |            /
+o--o--o--o--3->o--o--o--o--o--o--o--o--o--o--o
+      |        |                 |
+      o        v                 D
+      |        3
+      o
