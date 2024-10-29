@@ -201,12 +201,14 @@ function process_line($state, $line) {
             log_line("error when posting count");
         }
         else {
-            log_line(
+            $count = (
                 "white: $white, black: $black, brown: $brown, misty: $misty"
             );
 
-            if ($state['count'] != $data) {
-                $state['count'] = $data;
+            log_line($count);
+
+            if ($state['count'] != $count) {
+                $state['count'] = $count;
 
                 render($state);
             }
@@ -248,13 +250,15 @@ function render($state) {
         return;
     }
 
+    $mtime = null;
+
     if (file_exists("count.png")) {
-        unlink("count.png");
+        $mtime = filemtime("count.png");
     }
 
     shell_exec("gnuplot -c count.plot");
 
-    if (!file_exists("count.png")) {
+    if (!file_exists("count.png") || filemtime("count.png") === $mtime) {
         log_line("failed to render the plot");
     }
     else {
