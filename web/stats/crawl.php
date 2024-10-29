@@ -248,9 +248,13 @@ function render($state) {
         return;
     }
 
-    $result = shell_exec("gnuplot -c count.plot");
+    if (file_exists("count.png")) {
+        unlink("count.png");
+    }
 
-    if ($result === false || $result === null) {
+    shell_exec("gnuplot -c count.plot");
+
+    if (!file_exists("count.png")) {
         log_line("failed to render the plot");
     }
     else {
