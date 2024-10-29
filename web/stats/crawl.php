@@ -134,7 +134,7 @@ while (true) {
 log_line("closing the socket");
 socket_close($socket);
 
-function process_buffer($state, $message) {
+function process_buffer(&$state, $message) {
     $last_pos = 0;
     $msglen = strlen($message);
 
@@ -152,7 +152,7 @@ function process_buffer($state, $message) {
     return "";
 }
 
-function process_line($state, $line) {
+function process_line(&$state, $line) {
     $line = str_replace("\r", "", $line);
 
     if (preg_match("/white: /", $line) === 1
@@ -216,7 +216,7 @@ function process_line($state, $line) {
     }
 }
 
-function render($state) {
+function render(&$state) {
     $username = $state['conf']['api']['username'];
     $password = $state['conf']['api']['password'];
     $auth = base64_encode( "{$username}:{$password}" );
@@ -257,6 +257,7 @@ function render($state) {
     }
 
     shell_exec("gnuplot -c count.plot");
+    clearstatcache();
 
     if (!file_exists("count.png") || filemtime("count.png") === $mtime) {
         log_line("failed to render the plot");
