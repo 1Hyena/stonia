@@ -248,7 +248,7 @@ function render($state) {
         return;
     }
 
-    $result = shell_exec("gnuplot -c count.csv");
+    $result = shell_exec("gnuplot -c count.plot");
 
     if ($result === false || $result === null) {
         log_line("failed to render the plot");
