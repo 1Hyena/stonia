@@ -84,7 +84,7 @@ if ($result === false) {
     exit;
 }
 
-$command = $user."\n".$pass."\nplay\n \n";
+$command = $user."\n".$pass."\n";
 
 if (@socket_write($socket, $command, strlen($command)) === false) {
     $errno = socket_last_error($socket);
@@ -149,7 +149,7 @@ function process_buffer($conf, $message) {
 
 function process_line($conf, $line) {
     $line = str_replace("\r", "", $line);
-
+    echo $line."\n";
     if (preg_match("/white: /", $line) === 1
     &&  preg_match("/black: /", $line) === 1
     &&  preg_match("/brown: /", $line) === 1
