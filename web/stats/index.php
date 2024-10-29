@@ -31,67 +31,7 @@ $request = json_decode(
     true, 4, JSON_BIGINT_AS_STRING|JSON_INVALID_UTF8_IGNORE
 );
 
-$error = null;
-
-if ($request === null
-|| !array_key_exists('fun', $request)
-|| !array_key_exists('count', $request)
-|| $request['fun'] !== 'add_count'
-|| !is_array($request['count'])
-|| !array_key_exists('time', $request['count'])
-|| !is_int($request['count']['time'])
-|| !array_key_exists('online', $request['count'])
-|| !is_array($request['count']['online'])
-|| !array_key_exists('white', $request['count']['online'])
-|| !array_key_exists('black', $request['count']['online'])
-|| !array_key_exists('brown', $request['count']['online'])
-|| !array_key_exists('misty', $request['count']['online'])
-|| !is_int($request['count']['online']['white'])
-|| !is_int($request['count']['online']['black'])
-|| !is_int($request['count']['online']['brown'])
-|| !is_int($request['count']['online']['misty'])) {
-    $error = "invalid request parameters";
-}
-
-if ($error !== null) {
-    $response = array(
-        'error' => $error
-    );
-
-    http_response_code(400);
-    echo json_encode($response);
-
-    exit;
-}
-
-$count = array(
-    'time' => $request['count']['time'],
-    'online' => array(
-        'white' => $request['count']['online']['white'],
-        'black' => $request['count']['online']['black'],
-        'brown' => $request['count']['online']['brown'],
-        'misty' => $request['count']['online']['misty']
-    )
-);
-
-$error = archive($count);
-
-if ($error !== null) {
-    $response = array(
-        'error' => $error
-    );
-
-    http_response_code(500);
-    echo json_encode($response);
-
-    exit;
-}
-
-http_response_code(201);
-
-echo json_encode(
-    array('error' => null)
-);
+handle_request($request);
 
 function archive($data) {
     $data = json_encode($data);
@@ -198,4 +138,94 @@ function unarchive() {
     unset($line);
 
     return $result;
+}
+
+function handle_request($request) {
+    if ($request === null || !array_key_exists('fun', $request)) {
+        return abort_request("invalid request", 400);
+    }
+
+    if ($request['fun'] === 'add_count') {
+        return fun_add_count($request);
+    }
+    else if ($request['fun'] === 'plot_count') {
+        return fun_plot_count($request);
+    }
+
+    return abort_request("invalid fun parameter", 400);
+}
+
+function abort_request($error, $code) {
+    $response = array(
+        'error' => $error
+    );
+
+    http_response_code($code);
+    echo json_encode($response);
+
+    exit;
+}
+
+function fun_add_count($request) {
+    if (!array_key_exists('count', $request)
+    || !is_array($request['count'])
+    || !array_key_exists('time', $request['count'])
+    || !is_int($request['count']['time'])
+    || !array_key_exists('online', $request['count'])
+    || !is_array($request['count']['online'])
+    || !array_key_exists('white', $request['count']['online'])
+    || !array_key_exists('black', $request['count']['online'])
+    || !array_key_exists('brown', $request['count']['online'])
+    || !array_key_exists('misty', $request['count']['online'])
+    || !is_int($request['count']['online']['white'])
+    || !is_int($request['count']['online']['black'])
+    || !is_int($request['count']['online']['brown'])
+    || !is_int($request['count']['online']['misty'])) {
+        return abort_request("invalid request parameters", 400);
+    }
+
+    $count = array(
+        'time' => $request['count']['time'],
+        'online' => array(
+            'white' => $request['count']['online']['white'],
+            'black' => $request['count']['online']['black'],
+            'brown' => $request['count']['online']['brown'],
+            'misty' => $request['count']['online']['misty']
+        )
+    );
+
+    $error = archive($count);
+
+    if ($error !== null) {
+        return abort_request($error, 500);
+    }
+
+    http_response_code(201);
+
+    echo json_encode(
+        array('error' => null)
+    );
+}
+
+function fun_plot_count($request) {
+    if (!array_key_exists('image', $request)
+    ||  !is_string($request['image'])) {
+        return abort_request("invalid request parameters", 400);
+    }
+
+    $image = base64_decode($request['image'], true);
+
+    if ($image === false) {
+        return abort_request("invalid base64 in image", 400);
+    }
+
+    if (file_put_contents("count.png", $image) === false) {
+        return abort_request("failed to save the image", 500);
+    }
+
+    http_response_code(201);
+
+    echo json_encode(
+        array('error' => null)
+    );
 }

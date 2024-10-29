@@ -264,6 +264,41 @@ function render(&$state) {
     }
     else {
         log_line("a new plot has been rendered");
+        upload($state, "count.png");
+    }
+}
+
+function upload(&$state, $filepath) {
+    $url = $state['conf']['api']['address'];
+    $data = json_encode(
+        array(
+            'fun' => 'plot_count',
+            'image' => base64_encode(file_get_contents($filepath))
+        )
+    );
+
+    $username = $state['conf']['api']['username'];
+    $password = $state['conf']['api']['password'];
+    $auth = base64_encode( "{$username}:{$password}" );
+
+    $options = [
+        'http' => [
+            'header' => "Content-type: application/json\r\n".
+                        "Content-Length: ".strlen($data)."\r\n".
+                        "Authorization: Basic ".$auth,
+            'method' => 'POST',
+            'content' => $data,
+        ],
+    ];
+
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+
+    if ($result === false) {
+        log_line("error when uploading ".$filepath);
+    }
+    else {
+        log_line($filepath." uploaded");
     }
 }
 
