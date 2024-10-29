@@ -95,6 +95,11 @@ if (@socket_write($socket, $command, strlen($command)) === false) {
 
 socket_set_nonblock($socket);
 
+$state = array(
+    'conf' => $conf,
+    'count' => ""
+);
+
 $buffer = "";
 
 while (true) {
@@ -121,7 +126,7 @@ while (true) {
         }
     } else {
         $buffer.=$out;
-        $buffer = process_buffer($conf, $buffer);
+        $buffer = process_buffer($state, $buffer);
     }
 }
 
@@ -129,7 +134,7 @@ while (true) {
 log_line("closing the socket");
 socket_close($socket);
 
-function process_buffer($conf, $message) {
+function process_buffer($state, $message) {
     $last_pos = 0;
     $msglen = strlen($message);
 
@@ -140,14 +145,14 @@ function process_buffer($conf, $message) {
             return substr($message, $last_pos);
         }
 
-        process_line($conf, substr($message, $last_pos, $pos - $last_pos));
+        process_line($state, substr($message, $last_pos, $pos - $last_pos));
         $last_pos = $pos + 1;
     }
 
     return "";
 }
 
-function process_line($conf, $line) {
+function process_line($state, $line) {
     $line = str_replace("\r", "", $line);
 
     if (preg_match("/white: /", $line) === 1
@@ -159,7 +164,7 @@ function process_line($conf, $line) {
         $brown = intval(substr($line, strpos($line, "brown: ") + 7));
         $misty = intval(substr($line, strpos($line, "misty: ") + 7));
 
-        $url = $conf['api']['address'];
+        $url = $state['conf']['api']['address'];
         $data = json_encode(
             array(
                 'fun' => 'add_count',
@@ -175,8 +180,8 @@ function process_line($conf, $line) {
             )
         );
 
-        $username = $conf['api']['username'];
-        $password = $conf['api']['password'];
+        $username = $state['conf']['api']['username'];
+        $password = $state['conf']['api']['password'];
         $auth = base64_encode( "{$username}:{$password}" );
 
         $options = [
@@ -199,7 +204,56 @@ function process_line($conf, $line) {
             log_line(
                 "white: $white, black: $black, brown: $brown, misty: $misty"
             );
+
+            if ($state['count'] != $data) {
+                $state['count'] = $data;
+
+                render($state);
+            }
         }
+    }
+}
+
+function render($state) {
+    $username = $state['conf']['api']['username'];
+    $password = $state['conf']['api']['password'];
+    $auth = base64_encode( "{$username}:{$password}" );
+
+    $options = [
+        'http' => [
+            'header' => "Content-type: application/json\r\n".
+                        "Authorization: Basic ".$auth,
+            'method' => 'GET'
+        ],
+    ];
+
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+
+    if ($result === false) {
+        log_line("failed to get data to render");
+        return;
+    }
+
+    $result = json_decode(
+        $result,
+        true, 4, JSON_BIGINT_AS_STRING|JSON_INVALID_UTF8_IGNORE
+    );
+
+    $csv = $result['csv'];
+
+    if (file_put_contents("count.csv", $csv) === false) {
+        log_line("failed to write CSV file for plotting");
+        return;
+    }
+
+    $result = shell_exec("gnuplot -c count.csv");
+
+    if ($result === false || $result === null) {
+        log_line("failed to render the plot");
+    }
+    else {
+        log_line("a new plot has been rendered");
     }
 }
 

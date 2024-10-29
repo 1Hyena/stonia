@@ -1,14 +1,16 @@
 <?php
+date_default_timezone_set('UTC');
 
 header('Content-type: application/json; charset=utf-8');
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET'
 ||  $_SERVER['REQUEST_METHOD'] == 'HEAD') {
-    http_response_code(501);
+    if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+        $response = unarchive();
+        echo json_encode($response);
+    }
 
-    echo json_encode(
-        array('error' => 'method not implemented: '.$_SERVER['REQUEST_METHOD'])
-    );
+    http_response_code(201);
 
     exit;
 }
@@ -72,10 +74,128 @@ $count = array(
     )
 );
 
-file_put_contents("data", json_encode($count)."\n", LOCK_EX|FILE_APPEND);
+$error = archive($count);
+
+if ($error !== null) {
+    $response = array(
+        'error' => $error
+    );
+
+    http_response_code(500);
+    echo json_encode($response);
+
+    exit;
+}
 
 http_response_code(201);
 
 echo json_encode(
     array('error' => null)
 );
+
+function archive($data) {
+    $data = json_encode($data);
+
+    if ($data === false) {
+        return "unable to encode json";
+    }
+
+    $filename = "data.zip";
+    $zip = new ZipArchive;
+
+    $res = $zip->open($filename, ZipArchive::CREATE);
+
+    if ($res !== true) {
+        return "unable to open $filename";
+    }
+
+    $date = new DateTimeImmutable();
+    $dirname = date_format($date, 'Y-m');
+    $day = date_format($date, 'd');
+
+    $zip->addEmptyDir($dirname, ZipArchive::FL_ENC_UTF_8);
+
+    if ($zip->locateName($dirname."/") === false) {
+        $zip->close();
+        return "unable to create directory $dirname in $filename";
+    }
+
+    $before = $zip->getFromName($dirname."/".$day);
+
+    if ($before === false) {
+        $before = "";
+    }
+
+    $result = $zip->addFromString(
+        $dirname."/".$day, $before.$data."\n",
+        ZipArchive::FL_ENC_UTF_8|ZipArchive::FL_OVERWRITE
+    );
+
+    $zip->close();
+
+    if ($result === false) {
+        return "failed to archive data";
+    }
+
+    return null;
+}
+
+function unarchive() {
+    $filename = "data.zip";
+    $zip = new ZipArchive;
+
+    $res = $zip->open($filename, ZipArchive::RDONLY);
+
+    if ($res !== true) {
+        return array('error' => "unable to open $filename");
+    }
+
+    $date = new DateTime();
+    $date->modify("-6 day");
+
+    $result = "";
+
+    for ($i = 0; $i < 7; $i++) {
+        $dirname = date_format($date, 'Y-m');
+        $day = date_format($date, 'd');
+        $contents = $zip->getFromName($dirname."/".$day);
+
+        if ($contents !== false) {
+            $result.=$contents;
+        }
+
+        $date->modify("+1 day");
+    }
+
+    $lines = explode("\n", $result);
+    $result = array(
+        'error' => null,
+        'csv' => "timestamp,category,count\n"
+    );
+
+    foreach ($lines as &$line) {
+        $count = json_decode(
+            $line, true, 4, JSON_BIGINT_AS_STRING|JSON_INVALID_UTF8_IGNORE
+        );
+
+        if ($count === null) {
+            continue;
+        }
+
+        $white = $count['online']['white'];
+        $black = $count['online']['black'];
+        $brown = $count['online']['brown'];
+        $misty = $count['online']['misty'];
+        $total = $white + $black + $brown + $misty;
+
+        $result['csv'].=$count['time'].",white,".$white."\n";
+        $result['csv'].=$count['time'].",black,".$black."\n";
+        $result['csv'].=$count['time'].",brown,".$brown."\n";
+        $result['csv'].=$count['time'].",misty,".$misty."\n";
+        $result['csv'].=$count['time'].",total,".$total."\n";
+    }
+
+    unset($line);
+
+    return $result;
+}
