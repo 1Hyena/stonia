@@ -84,7 +84,7 @@ if ($result === false) {
     exit;
 }
 
-$command = "\n\n\n\nstats\n\n". $user."\n".$pass."\nplay\n \n";
+$command = $user."\n".$pass."\nplay\n \n";
 
 if (@socket_write($socket, $command, strlen($command)) === false) {
     $errno = socket_last_error($socket);
