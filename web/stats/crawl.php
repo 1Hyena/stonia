@@ -105,8 +105,6 @@ while (true) {
         socket_clear_error($socket);
 
         if ($errno == SOCKET_EAGAIN) {
-            sleep(10);
-
             $command = "play\n \n";
 
             if (@socket_write($socket, $command, strlen($command)) === false) {
@@ -114,6 +112,8 @@ while (true) {
                 socket_clear_error($socket);
                 log_line("socket_write() failed: ".socket_strerror($errno));
             }
+
+            sleep(10);
         } else {
             log_line("code $errno when reading");
 
@@ -149,7 +149,7 @@ function process_buffer($conf, $message) {
 
 function process_line($conf, $line) {
     $line = str_replace("\r", "", $line);
-    echo $line."\n";
+
     if (preg_match("/white: /", $line) === 1
     &&  preg_match("/black: /", $line) === 1
     &&  preg_match("/brown: /", $line) === 1
