@@ -219,7 +219,7 @@ function fun_plot_count($request) {
         return abort_request("invalid base64 in image", 400);
     }
 
-    if (file_put_contents("count.png", $image) === false) {
+    if (file_put_contents("../files/count.png", $image) === false) {
         return abort_request("failed to save the image", 500);
     }
 
