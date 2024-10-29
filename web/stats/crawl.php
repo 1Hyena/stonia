@@ -1,4 +1,20 @@
 <?php
+/* Example configuration file:
+    {
+        "mud": {
+            "host": "stonia.ttu.ee",
+            "port": 4000,
+            "account": "",
+            "password": ""
+        },
+        "api": {
+            "address": "https://stonia.net.ee/stats/",
+            "username": "",
+            "password": ""
+        }
+    }
+*/
+
 error_reporting(E_ALL);
 date_default_timezone_set('UTC');
 
@@ -68,7 +84,7 @@ if ($result === false) {
     exit;
 }
 
-$command = $user."\n".$pass."\nplay\n\n";
+$command = "\n\n\n\nstats\n\n". $user."\n".$pass."\nplay\n \n";
 
 if (@socket_write($socket, $command, strlen($command)) === false) {
     $errno = socket_last_error($socket);
@@ -91,7 +107,7 @@ while (true) {
         if ($errno == SOCKET_EAGAIN) {
             sleep(10);
 
-            $command = "play\n\n";
+            $command = "play\n \n";
 
             if (@socket_write($socket, $command, strlen($command)) === false) {
                 $errno = socket_last_error($socket);
