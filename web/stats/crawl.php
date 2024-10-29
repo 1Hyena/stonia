@@ -207,7 +207,7 @@ function process_line($state, $line) {
 
             log_line($count);
 
-            if ($state['count'] != $count) {
+            if ($state['count'] !== $count) {
                 $state['count'] = $count;
 
                 render($state);
