@@ -7,7 +7,7 @@ control_c()
     # Run if user hits control-c.
     now=`date +"$date_format"`
     printf "\033[1;36m%s\033[0m :: Caught signal (SIGINT).\n" "$now" 1>&2
-    
+
     now=`date +"$date_format"`
     printf "\033[1;36m%s\033[0m :: Closing.\n" "$now" 1>&2
     exit
@@ -25,7 +25,7 @@ function process_line {
         if [ "$word" = "#AREA" ]
         then
             sect_area=true
-            area_name=`printf "%s" "$1" | cut -d " " -f2- | tr -d '"' | tr -d '~'`
+            area_name=`printf "%s" "$1" | cut -d " " -f2- | tr -d '"' | tr -d '^'`
         fi
     else
         if [ "$sect_mobiles" = false ]
@@ -52,11 +52,11 @@ function process_line {
                     expect="name"
                 elif [ "$expect" = "name" ]
                 then
-                    mob_name=`printf "%s" "$1" | tr -d '"' | tr -d '~'`
+                    mob_name=`printf "%s" "$1" | tr -d '"' | tr -d '^'`
                     expect="short_desc"
                 elif [ "$expect" = "short_desc" ]
                 then
-                    mob_short_desc=`printf "%s" "$1" | tr -d '"' | tr -d '~'`
+                    mob_short_desc=`printf "%s" "$1" | tr -d '"' | tr -d '^'`
                     expect="train"
                 elif [ "$expect" = "train" ] && [ "$word" = "T" ] && [ "${words[2]}" = "" ]
                 then
@@ -99,7 +99,7 @@ do
         then
             break
         fi
-    done < "$f"    
+    done < "$f"
 done
 
 first=true
@@ -121,5 +121,3 @@ done
 printf "\n}\n"
 
 exit 0
-
-
