@@ -41,9 +41,17 @@ foreach ($shops as $vnum=>$shopkeeper) {
         continue;
     }
 
-    $mob = explode(
+    $mob_name = explode(
         " ", array_key_exists($vnum, $mobiles) ? $mobiles[$vnum]["name"] : ""
     )[0];
+
+    $mob_short_desc = array_key_exists($vnum, $mobiles) ? (
+        $mobiles[$vnum]["short_desc"]
+    ) : "";
+
+    $mob_long_desc = array_key_exists($vnum, $mobiles) ? (
+        $mobiles[$vnum]["long_desc"]
+    ) : "";
 
     $room_vnum = $shopkeeper["room"]["vnum"];
 
@@ -91,7 +99,11 @@ foreach ($shops as $vnum=>$shopkeeper) {
     }
 
     $results[$vnum] = array(
-        "mob" => ucfirst($mob),
+        "mob" => array(
+            "name" => ucfirst($mob_name),
+            "short_desc" => $mob_short_desc,
+            "long_desc" => $mob_long_desc
+        ),
         "room" => $room,
         "area" => $shopkeeper["area"],
         "list" => $list
@@ -322,6 +334,9 @@ function parse_mobiles($filepath) {
             else if ($row === 2) {
                 $mobiles[$vnum]['short_desc'] = explode("^", $line)[0];
             }
+            else if ($row === 3) {
+                $mobiles[$vnum]['long_desc'] = $line;
+            }
         }
 
         if (strpos($line, "#") === 0) {
@@ -332,7 +347,8 @@ function parse_mobiles($filepath) {
 
                 $mobiles[$vnum] = array(
                     'name' => null,
-                    'short_desc' => null
+                    'short_desc' => null,
+                    'long_desc' => null
                 );
             }
             else $vnum = null;
@@ -570,9 +586,17 @@ function print_markdown($data) {
         print("## ".$area." ".str_repeat("#", 76 - strlen($area))."\n\n");
 
         foreach ($shops as $shop) {
-            $mob = $shop["mob"]." in ".$shop["room"];
+            $mob = $shop["mob"];
+            $mob_name = $mob["name"];
+            $mob_long_desc = $mob["long_desc"];
 
-            print("### ".$mob." ".str_repeat("#", 75 - strlen($mob))."\n\n");
+            $title = $mob_name." in ".$shop["room"];
+
+            print(
+                "### ".$title." ".str_repeat("#", 75 - strlen($title))."\n\n"
+            );
+
+            print($mob_long_desc."\n\n");
 
             foreach ($headings as $heading => $underline) {
                 print(
