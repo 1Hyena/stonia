@@ -28,7 +28,8 @@
         --smallest-width: 320px;
         --content-padding: 10dvmin;
         --content-width: max(
-            min(100dvh - var(--content-padding), 100dvw), 72dvw
+            min(100dvh - var(--content-padding), 100dvw),
+            72dvw, min(800px, calc(100dvw - 1rem))
         );
         --content-height: min(
             max(
