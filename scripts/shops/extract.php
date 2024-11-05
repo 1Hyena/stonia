@@ -573,7 +573,7 @@ function print_markdown($data) {
             $mob = $shop["mob"]." in ".$shop["room"];
 
             print("### ".$mob." ".str_repeat("#", 75 - strlen($mob))."\n\n");
-/*
+
             foreach ($headings as $heading => $underline) {
                 print(
                     ($heading === "Count" ? "| " : " | ").
@@ -599,7 +599,7 @@ function print_markdown($data) {
                 );
             }
 
-            print("\n\n");*/
+            print("\n\n");
         }
     }
 }
