@@ -38,9 +38,9 @@
         );
         --menu-width: 12rem;
         --menu-burger-width: 2rem;
-        --menu-burger-height: 1.5rem;
+        --menu-burger-height: 2rem;
         --menu-header-height: var(--menu-burger-height);
-        --menu-footer-height: var(--menu-header-height);
+        --menu-footer-height: calc(var(--menu-header-height) / 2);
         --menu-agenda-max-height: calc(
             100dvh - var(--menu-header-height) - var(--menu-footer-height)
         );
@@ -97,6 +97,12 @@
 
         img[src="files/count.png"] {
             filter: invert(1);
+        }
+    }
+
+    @media (max-width: 30rem) {
+        .markdown-body {
+            font-size: small;
         }
     }
 
@@ -245,9 +251,10 @@
         opacity: 0.5;
     }
 
-    .menu-header, .menu-footer {
+    .menu-header {
         height: var(--menu-header-height);
         line-height: var(--menu-header-height);
+        font-size: x-large;
     }
 
     .menu-footer {
@@ -343,7 +350,7 @@
         display: block;
         text-align: right;
         pointer-events: none;
-        padding-right: 0.5rem;
+        padding-right: 0.25rem;
     }
 
     label[for="burger"]::after {
