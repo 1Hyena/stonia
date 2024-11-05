@@ -90,7 +90,8 @@ foreach ($shops as $vnum=>$shopkeeper) {
         $list[] = array(
             "count" => $count,
             "short_desc" => $short_desc,
-            "vnum" => $obj_vnum
+            "vnum" => $obj_vnum,
+            "worth" => $obj["worth"]
         );
     }
 
@@ -102,7 +103,9 @@ foreach ($shops as $vnum=>$shopkeeper) {
         "mob" => array(
             "name" => ucfirst($mob_name),
             "short_desc" => $mob_short_desc,
-            "long_desc" => $mob_long_desc
+            "long_desc" => $mob_long_desc,
+            "buy" => $shopkeeper["buy"],
+            "sell" => $shopkeeper["sell"]
         ),
         "room" => $room,
         "area" => $shopkeeper["area"],
@@ -121,6 +124,7 @@ foreach ($results as $vnum => $result) {
 }
 
 print_markdown($arearesults);
+//var_dump($arearesults);
 
 function parse_area($filepath) {
     $objects = parse_objects($filepath);
@@ -136,7 +140,7 @@ function parse_area($filepath) {
                 continue;
             }
 
-            $shops[$mob_vnum] = $mob;
+            $shops[$mob_vnum] += $mob;
             $shops[$mob_vnum]["room"] = array(
                 'vnum' => $room_vnum
             );
@@ -260,6 +264,15 @@ function parse_objects($filepath) {
 
             if ($row === 2) {
                 $objects[$vnum]['short_desc'] = explode("^", $line)[0];
+            }
+            else if ($row === 6) {
+                $parts = array_values(
+                    array_filter(explode(" ", $line), 'strlen')
+                );
+
+                if (count($parts) > 2 && ctype_digit($parts[2])) {
+                    $objects[$vnum]['worth'] = intval($parts[2], 10);
+                }
             }
         }
 
@@ -473,8 +486,14 @@ function parse_shops($filepath) {
         );
 
         if (count($parts) > 0 && ctype_digit($parts[0])) {
-            if ($parts[0] == "0") echo $filepath."\n";
             $shops[$parts[0]] = array();
+
+            if (count($parts) > 7
+            && ctype_digit($parts[6])
+            && ctype_digit($parts[7])) {
+                $shops[$parts[0]]["sell"] = intval($parts[6], 10);
+                $shops[$parts[0]]["buy"] = intval($parts[7], 10);
+            }
         }
     }
 
@@ -571,14 +590,16 @@ function print_markdown($data) {
         "Count"
             => ":----",
         "Item"
-            => ":----------------------------------------------------------",
-        "Vnum"
-            => ":-----"
+            => ":-------------------------------------------",
+        "Gold"
+            => ":-------------------:"
     );
 
     $fmt1 = "%-".strlen($headings['Count']).".".strlen($headings['Count'])."s";
     $fmt2 = "%-".strlen($headings['Item']).".".strlen($headings['Item'])."s";
-    $fmt3 = "%-".strlen($headings['Vnum']).".".strlen($headings['Vnum'])."s";
+    $fmt3 = "%-".strlen(
+        $headings['Gold']
+    ).".".strlen($headings['Gold'])."s";
 
     print("# Shops ".str_repeat("#", 72)."\n\n");
 
@@ -616,10 +637,18 @@ function print_markdown($data) {
             print(" |\n");
 
             foreach ($shop["list"] as $item) {
+                $price_buy = ($item["worth"] * ($mob["buy"] / 100)) / 15000;
+                $price_sell = ($item["worth"] * ($mob["sell"] / 100)) / 15000;
+
+                $price_buy = number_format((float)$price_buy, 5, '.', '');
+                $price_sell = number_format((float)$price_sell, 5, '.', '');
+
+                $price = $price_buy." / ".$price_sell;
+
                 print(
                     "| ".sprintf($fmt1, $item["count"]).
                     " | ".sprintf($fmt2, $item["short_desc"]).
-                    " | ".sprintf($fmt3, "#".$item["vnum"])." |\n"
+                    " | ".sprintf($fmt3, $price)." |\n"
                 );
             }
 
