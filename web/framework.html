@@ -26,13 +26,15 @@
     :root {
         --MDMA-AGENDA-TARGET-COLOR: green;
         --smallest-width: 320px;
-        --content-padding: 10vmin;
-        --content-width: max(min(100vh - var(--content-padding), 100vw), 72vw);
+        --content-padding: 10dvmin;
+        --content-width: max(
+            min(100dvh - var(--content-padding), 100dvw), 72dvw
+        );
         --content-height: min(
             max(
-                100vh - var(--content-padding),
-                200vh - var(--content-padding) - 100vw
-            ), 100vh
+                100dvh - var(--content-padding),
+                200dvh - var(--content-padding) - 100dvw
+            ), 100dvh
         );
         --menu-width: 12rem;
         --menu-burger-width: 2rem;
@@ -40,7 +42,7 @@
         --menu-header-height: var(--menu-burger-height);
         --menu-footer-height: var(--menu-header-height);
         --menu-agenda-max-height: calc(
-            100vh - var(--menu-header-height) - var(--menu-footer-height)
+            100dvh - var(--menu-header-height) - var(--menu-footer-height)
         );
         --menu-transition-speed: 0.2s;
         --md-page-max-width: 980px;
@@ -103,7 +105,7 @@
         top: 0;
         left: 0;
         width: var(--MDMA-PAGE-LOADED);
-        height: max(0.5vh, 2px);
+        height: max(0.5dvh, 2px);
         background-color: rgba(20,109,148,0.5);
         opacity: var(--MDMA-LOADER-OPACITY);
         pointer-events: none;
@@ -140,8 +142,8 @@
         display: inline-block;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100dvw;
+        height: 100dvh;
     }
 
     .md-page {
@@ -332,8 +334,8 @@
     }
 
     #MDMA-AGENDA a + div {
-        max-height: 100vh;
-        transition: max-height 0.3s ease-in;
+        transition: font-size 0.3s ease-in;
+        font-size: inherit;
         overflow: hidden;
     }
 
