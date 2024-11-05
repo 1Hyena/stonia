@@ -7,7 +7,7 @@ if (count($argv) <= 1) {
 $areapath = $argv[1];
 
 if (!is_dir($areapath)) {
-    exit('invalid diretory path: '.$areapath);
+    exit('invalid diretory path: '.$areapath."\n");
 }
 
 $files = glob($areapath."/*.are");
@@ -113,6 +113,17 @@ foreach ($shops as $vnum=>$shopkeeper) {
     );
 }
 
+$written = file_put_contents(
+    "data.json", json_encode($results, JSON_PRETTY_PRINT)
+);
+
+if ($written === false) {
+    echo("failed to write data.json\n");
+}
+else {
+    echo($written." bytes written into data.json\n");
+}
+
 $arearesults = array();
 
 foreach ($results as $vnum => $result) {
@@ -123,8 +134,15 @@ foreach ($results as $vnum => $result) {
     $arearesults[$result["area"]][$vnum] = $result;
 }
 
-print_markdown($arearesults);
-//var_dump($arearesults);
+$markdown = generate_markdown($arearesults);
+$written = file_put_contents("data.md", $markdown);
+
+if ($written === false) {
+    echo("failed to write data.md\n");
+}
+else {
+    echo($written." bytes written into data.md\n");
+}
 
 function parse_area($filepath) {
     $objects = parse_objects($filepath);
@@ -585,7 +603,9 @@ function parse_resets($filepath) {
     return $resets;
 }
 
-function print_markdown($data) {
+function generate_markdown($data) {
+    $markdown = "";
+
     $headings = array(
         "Count"
             => ":----",
@@ -601,10 +621,10 @@ function print_markdown($data) {
         $headings['Gold']
     ).".".strlen($headings['Gold'])."s";
 
-    print("# Shops ".str_repeat("#", 72)."\n\n");
+    $markdown.=("# Shops ".str_repeat("#", 72)."\n\n");
 
     foreach ($data as $area => $shops) {
-        print("## ".$area." ".str_repeat("#", 76 - strlen($area))."\n\n");
+        $markdown.=("## ".$area." ".str_repeat("#", 76 - strlen($area))."\n\n");
 
         foreach ($shops as $shop) {
             $mob = $shop["mob"];
@@ -613,14 +633,14 @@ function print_markdown($data) {
 
             $title = $mob_name." in ".$shop["room"];
 
-            print(
+            $markdown.=(
                 "### ".$title." ".str_repeat("#", 75 - strlen($title))."\n\n"
             );
 
-            print($mob_long_desc."\n\n");
+            $markdown.=($mob_long_desc."\n\n");
 
             foreach ($headings as $heading => $underline) {
-                print(
+                $markdown.=(
                     ($heading === "Count" ? "| " : " | ").
                     sprintf(
                         "%".strlen($underline)."s", $heading
@@ -628,13 +648,13 @@ function print_markdown($data) {
                 );
             }
 
-            print(" |\n");
+            $markdown.=(" |\n");
 
             foreach ($headings as $heading => $underline) {
-                print(($heading === "Count" ? "| " : " | ").$underline);
+                $markdown.=(($heading === "Count" ? "| " : " | ").$underline);
             }
 
-            print(" |\n");
+            $markdown.=(" |\n");
 
             foreach ($shop["list"] as $item) {
                 $price_buy = ($item["worth"] * ($mob["buy"] / 100)) / 15000;
@@ -645,14 +665,16 @@ function print_markdown($data) {
 
                 $price = $price_buy." / ".$price_sell;
 
-                print(
+                $markdown.=(
                     "| ".sprintf($fmt1, $item["count"]).
                     " | ".sprintf($fmt2, $item["short_desc"]).
                     " | ".sprintf($fmt3, $price)." |\n"
                 );
             }
 
-            print("\n\n");
+            $markdown.=("\n\n");
         }
     }
+
+    return $markdown;
 }

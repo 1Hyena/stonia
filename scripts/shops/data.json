@@ -1,0 +1,3682 @@
+{
+    "6607": {
+        "mob": {
+            "name": "Cook",
+            "short_desc": "Demon Cook",
+            "long_desc": "Demon cook is here, making a breakfast for his fellows.",
+            "buy": 50,
+            "sell": 50
+        },
+        "room": "The kitchen",
+        "area": "Demons' Keep",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a large sack",
+                "vnum": 23261,
+                "worth": 250
+            },
+            {
+                "count": 1,
+                "short_desc": "a black silk belt",
+                "vnum": 23271,
+                "worth": 30000
+            }
+        ]
+    },
+    "2651": {
+        "mob": {
+            "name": "Bastard",
+            "short_desc": "bastard hiramoto",
+            "long_desc": "The Bastard Hiramoto stands here.",
+            "buy": 75,
+            "sell": 110
+        },
+        "room": "Pawn Shop",
+        "area": "Descent to Hell",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a golden ring",
+                "vnum": 23229,
+                "worth": 20000
+            },
+            {
+                "count": 1,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather gloves",
+                "vnum": 23203,
+                "worth": 1200
+            }
+        ]
+    },
+    "9511": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "the shopkeeper",
+            "long_desc": "The shopkeeper stands here.",
+            "buy": 100,
+            "sell": 200
+        },
+        "room": "The General Store",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a large sack",
+                "vnum": 23261,
+                "worth": 250
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Dorpat",
+                "vnum": 3167,
+                "worth": 900
+            }
+        ]
+    },
+    "9513": {
+        "mob": {
+            "name": "Ahkeem",
+            "short_desc": "Ahkeem the tailor",
+            "long_desc": "Ahkeem the tailor welcomes you to his store.",
+            "buy": 40,
+            "sell": 200
+        },
+        "room": "Ahkeem's Stuff",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a plain leather shirt",
+                "vnum": 23211,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a leather belt",
+                "vnum": 23216,
+                "worth": 800
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather gloves",
+                "vnum": 23203,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            }
+        ]
+    },
+    "9514": {
+        "mob": {
+            "name": "Vera",
+            "short_desc": "Vera the veggie lady",
+            "long_desc": "Vera the veggie lady beams as you look over her stand.",
+            "buy": 40,
+            "sell": 150
+        },
+        "room": "Vera's Veggies",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            }
+        ]
+    },
+    "9516": {
+        "mob": {
+            "name": "Abdul",
+            "short_desc": "Abdul the armorer",
+            "long_desc": "Abdul stands here, waiting to help you.",
+            "buy": 10,
+            "sell": 150
+        },
+        "room": "Abdul's Armor",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a small metal shield",
+                "vnum": 23218,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a large metal shield",
+                "vnum": 23219,
+                "worth": 6000
+            },
+            {
+                "count": 1,
+                "short_desc": "a body ringmail",
+                "vnum": 23210,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a plain leather shirt",
+                "vnum": 23211,
+                "worth": 900
+            }
+        ]
+    },
+    "9517": {
+        "mob": {
+            "name": "Igor",
+            "short_desc": "Igor the weaponsmith",
+            "long_desc": "Igor stands here doing... something.",
+            "buy": 10,
+            "sell": 130
+        },
+        "room": "Igor's Implements of Destruction",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 5,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 6,
+                "short_desc": "a long dagger",
+                "vnum": 23204,
+                "worth": 500
+            },
+            {
+                "count": 5,
+                "short_desc": "a morningstar",
+                "vnum": 3391,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a steel broad sword",
+                "vnum": 1724,
+                "worth": 1200
+            },
+            {
+                "count": 5,
+                "short_desc": "a wooden club",
+                "vnum": 23206,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "an iron-bounded flail",
+                "vnum": 23207,
+                "worth": 350
+            },
+            {
+                "count": 1,
+                "short_desc": "a woodaxe",
+                "vnum": 23208,
+                "worth": 270
+            }
+        ]
+    },
+    "9579": {
+        "mob": {
+            "name": "Elvira",
+            "short_desc": "Elvira",
+            "long_desc": "Elvira stands here mixing a love potion.",
+            "buy": 25,
+            "sell": 187
+        },
+        "room": "The Witch's Brew",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a white potion",
+                "vnum": 23246,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a purple potion",
+                "vnum": 23245,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a silver vial",
+                "vnum": 23247,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            }
+        ]
+    },
+    "9580": {
+        "mob": {
+            "name": "Braheem",
+            "short_desc": "Braheem",
+            "long_desc": "Braheem stands here talking to the walls.",
+            "buy": 30,
+            "sell": 170
+        },
+        "room": "Braheem's Magic Shop",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a long elven wand",
+                "vnum": 23255,
+                "worth": 600
+            },
+            {
+                "count": 2,
+                "short_desc": "a scroll of identify",
+                "vnum": 3040,
+                "worth": 50000
+            },
+            {
+                "count": 1,
+                "short_desc": "an amber stick",
+                "vnum": 23257,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a runed scroll",
+                "vnum": 23251,
+                "worth": 1500
+            }
+        ]
+    },
+    "9584": {
+        "mob": {
+            "name": "Stitch",
+            "short_desc": "Stitch, the leather dude",
+            "long_desc": "Stitch, the leather dude reclines in his chair.",
+            "buy": 15,
+            "sell": 105
+        },
+        "room": "Ye Old Leather Shoppe",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a plain leather shirt",
+                "vnum": 23211,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather gloves",
+                "vnum": 23203,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather sleeves",
+                "vnum": 23201,
+                "worth": 1500
+            },
+            {
+                "count": 1,
+                "short_desc": "a leather jacket",
+                "vnum": 23209,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of soft leather boots",
+                "vnum": 23202,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a soft leather cap",
+                "vnum": 23213,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a hard leather helmet",
+                "vnum": 23214,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "an uncomfortable metal buckler",
+                "vnum": 23226,
+                "worth": 40000
+            }
+        ]
+    },
+    "9565": {
+        "mob": {
+            "name": "Shipwright",
+            "short_desc": "the shipwright",
+            "long_desc": "An old captain rests here carving on a stick.",
+            "buy": 86,
+            "sell": 131
+        },
+        "room": "Shipwright",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            }
+        ]
+    },
+    "9510": {
+        "mob": {
+            "name": "Baker",
+            "short_desc": "the baker",
+            "long_desc": "The baker stands here playing solitaire.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The Bread Stand",
+        "area": "Dorpat",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            }
+        ]
+    },
+    "6503": {
+        "mob": {
+            "name": "Storekeeper",
+            "short_desc": "the storekeeper",
+            "long_desc": "There is the Hide & Tooth storekeeper standing here, waiting patiently.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "Hide & Tooth Shop",
+        "area": "Dwarven Kingdom",
+        "list": [
+            {
+                "count": 10,
+                "short_desc": "a dwarven axe",
+                "vnum": 6518,
+                "worth": 6000
+            },
+            {
+                "count": 1,
+                "short_desc": "a morningstar",
+                "vnum": 3391,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather gloves",
+                "vnum": 23203,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather sleeves",
+                "vnum": 23201,
+                "worth": 1500
+            },
+            {
+                "count": 1,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            }
+        ]
+    },
+    "6504": {
+        "mob": {
+            "name": "Baker",
+            "short_desc": "Granite Head",
+            "long_desc": "Granite Head, the baker, is waiting for a customer here.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "Granite Head's Bakery",
+        "area": "Dwarven Kingdom",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a large sack",
+                "vnum": 23261,
+                "worth": 250
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            }
+        ]
+    },
+    "8523": {
+        "mob": {
+            "name": "Armourer",
+            "short_desc": "an armourer",
+            "long_desc": "A wise and old armourer is polishing his wares here.",
+            "buy": 50,
+            "sell": 100
+        },
+        "room": "A small palace armoury",
+        "area": "Elven Palace",
+        "list": [
+            {
+                "count": 2,
+                "short_desc": "an elven boots",
+                "vnum": 7801,
+                "worth": 200
+            },
+            {
+                "count": 2,
+                "short_desc": "an elven longsword",
+                "vnum": 7802,
+                "worth": 6000
+            },
+            {
+                "count": 2,
+                "short_desc": "an elven chainmail",
+                "vnum": 7800,
+                "worth": 1500
+            },
+            {
+                "count": 1,
+                "short_desc": "a small green hat",
+                "vnum": 7825,
+                "worth": 600
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of green leggings",
+                "vnum": 7826,
+                "worth": 660
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of green gloves",
+                "vnum": 7827,
+                "worth": 340
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of green sleeves",
+                "vnum": 7828,
+                "worth": 620
+            },
+            {
+                "count": 2,
+                "short_desc": "a green coat",
+                "vnum": 7830,
+                "worth": 1830
+            },
+            {
+                "count": 2,
+                "short_desc": "a green belt",
+                "vnum": 7832,
+                "worth": 1500
+            }
+        ]
+    },
+    "8514": {
+        "mob": {
+            "name": "Mage",
+            "short_desc": "an elven mage",
+            "long_desc": "An elven mage is meditating here.",
+            "buy": 50,
+            "sell": 100
+        },
+        "room": "The southernmost part in the Palace of Autumns.",
+        "area": "Elven Palace",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            },
+            {
+                "count": 1,
+                "short_desc": "a white potion",
+                "vnum": 23246,
+                "worth": 300
+            }
+        ]
+    },
+    "8512": {
+        "mob": {
+            "name": "Cook",
+            "short_desc": "a cook",
+            "long_desc": "A cook is here roasting for his king.",
+            "buy": 50,
+            "sell": 110
+        },
+        "room": "In the kitchen.",
+        "area": "Elven Palace",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a piece of lembas bread",
+                "vnum": 7835,
+                "worth": 1
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            }
+        ]
+    },
+    "7816": {
+        "mob": {
+            "name": "Dardhol",
+            "short_desc": "Dardhol",
+            "long_desc": "Dardhol the best of all the elven innkeepers stands here.",
+            "buy": 100,
+            "sell": 110
+        },
+        "room": "Blackbird Inn",
+        "area": "Elven Valley",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a white potion",
+                "vnum": 23246,
+                "worth": 300
+            },
+            {
+                "count": 2,
+                "short_desc": "a piece of lembas bread",
+                "vnum": 7835,
+                "worth": 1
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            },
+            {
+                "count": 2,
+                "short_desc": "a silver vial",
+                "vnum": 23247,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            }
+        ]
+    },
+    "7818": {
+        "mob": {
+            "name": "Heldor",
+            "short_desc": "an elven armourer",
+            "long_desc": "Heldor the elven armourer is here, staring at his new leather cap.",
+            "buy": 50,
+            "sell": 110
+        },
+        "room": "Heldor's Armour",
+        "area": "Elven Valley",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "an elven boots",
+                "vnum": 7801,
+                "worth": 200
+            },
+            {
+                "count": 3,
+                "short_desc": "an elven longsword",
+                "vnum": 7802,
+                "worth": 6000
+            },
+            {
+                "count": 3,
+                "short_desc": "an elven chainmail",
+                "vnum": 7800,
+                "worth": 1500
+            },
+            {
+                "count": 3,
+                "short_desc": "a small green hat",
+                "vnum": 7825,
+                "worth": 600
+            },
+            {
+                "count": 3,
+                "short_desc": "a pair of green leggings",
+                "vnum": 7826,
+                "worth": 660
+            },
+            {
+                "count": 3,
+                "short_desc": "a pair of green gloves",
+                "vnum": 7827,
+                "worth": 340
+            },
+            {
+                "count": 3,
+                "short_desc": "a pair of green sleeves",
+                "vnum": 7828,
+                "worth": 620
+            },
+            {
+                "count": 2,
+                "short_desc": "a green coat",
+                "vnum": 7830,
+                "worth": 1830
+            },
+            {
+                "count": 3,
+                "short_desc": "a green belt",
+                "vnum": 7832,
+                "worth": 1500
+            }
+        ]
+    },
+    "11705": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "shopkeeper of Patisserie",
+            "long_desc": "Shopkeeper of Patisserie is standing here.",
+            "buy": 10,
+            "sell": 110
+        },
+        "room": "Patisserie",
+        "area": "Fellin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a piece of white bread",
+                "vnum": 1504,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 3011,
+                "worth": 10
+            },
+            {
+                "count": 1,
+                "short_desc": "a breadstick",
+                "vnum": 3153,
+                "worth": 5
+            },
+            {
+                "count": 1,
+                "short_desc": "a piece of lembas bread",
+                "vnum": 7835,
+                "worth": 1
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pot pie",
+                "vnum": 3009,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a buffalo water skin",
+                "vnum": 3138,
+                "worth": 30
+            },
+            {
+                "count": 1,
+                "short_desc": "a barrel of beer",
+                "vnum": 3000,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a bottle of beer",
+                "vnum": 3001,
+                "worth": 20
+            },
+            {
+                "count": 1,
+                "short_desc": "a bottle of George Killian's Red",
+                "vnum": 3154,
+                "worth": 20
+            }
+        ]
+    },
+    "11706": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "shopkeeper of Marina",
+            "long_desc": "Shopkeeper of Marina is standing here.",
+            "buy": 10,
+            "sell": 110
+        },
+        "room": "Marina",
+        "area": "Fellin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 3051,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of the city of Lindanise",
+                "vnum": 3162,
+                "worth": 2500
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of southern Lindanise",
+                "vnum": 3164,
+                "worth": 2000
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of the Dwarven Kingdom",
+                "vnum": 3165,
+                "worth": 4750
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of the first level of Moria",
+                "vnum": 3166,
+                "worth": 16500
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Dorpat",
+                "vnum": 3167,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Grey Mountains",
+                "vnum": 3168,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Cruel 'Lost World'",
+                "vnum": 3169,
+                "worth": 1300
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Elven Valley",
+                "vnum": 11731,
+                "worth": 2500
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Shire",
+                "vnum": 11732,
+                "worth": 2500
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Dwarven Kingdom",
+                "vnum": 11733,
+                "worth": 2500
+            }
+        ]
+    },
+    "11707": {
+        "mob": {
+            "name": "Armourer",
+            "short_desc": "Armourer of Fellin",
+            "long_desc": "Armourer of Fellin is standing here.",
+            "buy": 30,
+            "sell": 130
+        },
+        "room": "The Toggery of Fellin",
+        "area": "Fellin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a small green hat",
+                "vnum": 7825,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "an elven boots",
+                "vnum": 7801,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of green leggings",
+                "vnum": 7826,
+                "worth": 660
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of green gloves",
+                "vnum": 7827,
+                "worth": 340
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of green sleeves",
+                "vnum": 7828,
+                "worth": 620
+            },
+            {
+                "count": 1,
+                "short_desc": "a green coat",
+                "vnum": 7830,
+                "worth": 1830
+            },
+            {
+                "count": 1,
+                "short_desc": "a green belt",
+                "vnum": 7832,
+                "worth": 1500
+            },
+            {
+                "count": 1,
+                "short_desc": "a black horned helmet",
+                "vnum": 3502,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of black boots",
+                "vnum": 4105,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of black sleeves",
+                "vnum": 4106,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a black coat",
+                "vnum": 4107,
+                "worth": 1500
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of black leggings",
+                "vnum": 4108,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of black gloves",
+                "vnum": 4109,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a small metal shield",
+                "vnum": 3097,
+                "worth": 500
+            },
+            {
+                "count": 1,
+                "short_desc": "a large metal shield",
+                "vnum": 3116,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a small wooden shield",
+                "vnum": 3117,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a guardian shield",
+                "vnum": 3354,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a small round shield",
+                "vnum": 3704,
+                "worth": 0
+            }
+        ]
+    },
+    "11708": {
+        "mob": {
+            "name": "Weaponmaster",
+            "short_desc": "Weaponmaster of Fellin",
+            "long_desc": "Weaponmaster of Fellin is standing here.",
+            "buy": 30,
+            "sell": 130
+        },
+        "room": "Copperyard of Fellin",
+        "area": "Fellin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a long dagger",
+                "vnum": 23204,
+                "worth": 500
+            },
+            {
+                "count": 1,
+                "short_desc": "a long sword",
+                "vnum": 3124,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a short sword",
+                "vnum": 101,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a small axe",
+                "vnum": 103,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a spear",
+                "vnum": 3027,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a sharp knife",
+                "vnum": 23222,
+                "worth": 9000
+            },
+            {
+                "count": 1,
+                "short_desc": "a wooden club",
+                "vnum": 23206,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a bloody mace",
+                "vnum": 3390,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a morningstar",
+                "vnum": 3391,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a spiked mace",
+                "vnum": 3700,
+                "worth": 0
+            }
+        ]
+    },
+    "11709": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "shopkeeper of special items",
+            "long_desc": "Shopkeeper of special items is standing here.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "Special items store",
+        "area": "Fellin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a long wand",
+                "vnum": 23253,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a scroll of recall",
+                "vnum": 3042,
+                "worth": 30800
+            },
+            {
+                "count": 1,
+                "short_desc": "the staff of ruling",
+                "vnum": 4708,
+                "worth": 1000
+            }
+        ]
+    },
+    "11710": {
+        "mob": {
+            "name": "Jeweller",
+            "short_desc": "Jeweller of Fellin",
+            "long_desc": "Jeweller of Fellin is standing here.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "Jeweller's shop of Fellin",
+        "area": "Fellin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "an amulet",
+                "vnum": 23233,
+                "worth": 10000
+            },
+            {
+                "count": 1,
+                "short_desc": "a necklace",
+                "vnum": 23217,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            }
+        ]
+    },
+    "9414": {
+        "mob": {
+            "name": "Blacksmith",
+            "short_desc": "blacksmith",
+            "long_desc": "A huge sooty orc grins at your face.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The blacksmith's",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 3,
+                "short_desc": "a large metal shield",
+                "vnum": 3116,
+                "worth": 1000
+            }
+        ]
+    },
+    "9413": {
+        "mob": {
+            "name": "Boatwright",
+            "short_desc": "boatwright",
+            "long_desc": "A boatwright offers his roughly made vessels.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "On the Bridge",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            }
+        ]
+    },
+    "9401": {
+        "mob": {
+            "name": "Grocer",
+            "short_desc": "grocer",
+            "long_desc": "A retired warrior waits for customers.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The store",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            }
+        ]
+    },
+    "9428": {
+        "mob": {
+            "name": "Blacksmith",
+            "short_desc": "blacksmith",
+            "long_desc": "An impressivly sturdy dwarf meets you near her forge.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The blacksmith's",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 3,
+                "short_desc": "a large metal shield",
+                "vnum": 3116,
+                "worth": 1000
+            }
+        ]
+    },
+    "9427": {
+        "mob": {
+            "name": "Boatwright",
+            "short_desc": "boatwright",
+            "long_desc": "A tired man yawns and points to his boats.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "On the Bridge",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            }
+        ]
+    },
+    "9415": {
+        "mob": {
+            "name": "Grocer",
+            "short_desc": "grocer",
+            "long_desc": "An overweight and content hobbit waits in his shop.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The store",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            }
+        ]
+    },
+    "9442": {
+        "mob": {
+            "name": "Blacksmith",
+            "short_desc": "blacksmith",
+            "long_desc": "A tall brown man with dirty apron awaits behind counter.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The blacksmith's",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 3,
+                "short_desc": "a large metal shield",
+                "vnum": 3116,
+                "worth": 1000
+            }
+        ]
+    },
+    "9441": {
+        "mob": {
+            "name": "Boatwright",
+            "short_desc": "boatwright",
+            "long_desc": "A merchant offers boats for travellers.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "On the Bridge",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            }
+        ]
+    },
+    "9429": {
+        "mob": {
+            "name": "Grocer",
+            "short_desc": "grocer",
+            "long_desc": "A storekeeper tries to sell you something.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The store",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            }
+        ]
+    },
+    "9455": {
+        "mob": {
+            "name": "Blacksmith",
+            "short_desc": "blacksmith",
+            "long_desc": "A shadowy spirit of long-dead smith has been brought to undead life.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The blacksmith's",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a large metal shield",
+                "vnum": 3116,
+                "worth": 1000
+            }
+        ]
+    },
+    "9443": {
+        "mob": {
+            "name": "Grocer",
+            "short_desc": "grocer",
+            "long_desc": "An undead skeleton of a grocer walks around of the store.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "The store",
+        "area": "Fort British",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            }
+        ]
+    },
+    "7593": {
+        "mob": {
+            "name": "Blacksmith",
+            "short_desc": "the blacksmith",
+            "long_desc": "The blacksmith is here, pounding on an anvil and selling things.",
+            "buy": 100,
+            "sell": 120
+        },
+        "room": "Weapon shop",
+        "area": "Town of Gerighelm",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of soft leather boots",
+                "vnum": 23202,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            }
+        ]
+    },
+    "7594": {
+        "mob": {
+            "name": "Mage",
+            "short_desc": "the mage",
+            "long_desc": "The Mage is here, selling things.",
+            "buy": 80,
+            "sell": 150
+        },
+        "room": "Magic Shop",
+        "area": "Town of Gerighelm",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a large sack",
+                "vnum": 23261,
+                "worth": 250
+            },
+            {
+                "count": 1,
+                "short_desc": "a white potion",
+                "vnum": 23246,
+                "worth": 300
+            }
+        ]
+    },
+    "7604": {
+        "mob": {
+            "name": "Herbalist",
+            "short_desc": "the herbalist",
+            "long_desc": "The Herbalist is here, selling herbs.",
+            "buy": 70,
+            "sell": 130
+        },
+        "room": "Herbalist Shop",
+        "area": "Town of Gerighelm",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a pink potion",
+                "vnum": 23249,
+                "worth": 600
+            }
+        ]
+    },
+    "8106": {
+        "mob": {
+            "name": "Carpenter",
+            "short_desc": "carpenter",
+            "long_desc": "A carpenter stands here.",
+            "buy": 100,
+            "sell": 120
+        },
+        "room": "Carpenter's hovel",
+        "area": "Grey Mountains",
+        "list": [
+            {
+                "count": 2,
+                "short_desc": "a pair of hard leather pants",
+                "vnum": 3068,
+                "worth": 100
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of hard leather boots",
+                "vnum": 3069,
+                "worth": 100
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of hard leather gloves",
+                "vnum": 3070,
+                "worth": 100
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of hard leather sleeves",
+                "vnum": 3071,
+                "worth": 100
+            },
+            {
+                "count": 2,
+                "short_desc": "a hard leather jerkin",
+                "vnum": 3066,
+                "worth": 200
+            },
+            {
+                "count": 2,
+                "short_desc": "a hard leather cap",
+                "vnum": 3067,
+                "worth": 100
+            },
+            {
+                "count": 2,
+                "short_desc": "a bloody mace",
+                "vnum": 3390,
+                "worth": 100
+            },
+            {
+                "count": 2,
+                "short_desc": "a morningstar",
+                "vnum": 3391,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a small wooden shield",
+                "vnum": 3117,
+                "worth": 100
+            },
+            {
+                "count": 3,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 3,
+                "short_desc": "a long dagger",
+                "vnum": 23204,
+                "worth": 500
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            },
+            {
+                "count": 1,
+                "short_desc": "a wooden staff",
+                "vnum": 8910,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a wooden club",
+                "vnum": 23206,
+                "worth": 300
+            },
+            {
+                "count": 3,
+                "short_desc": "a large wooden shield",
+                "vnum": 23220,
+                "worth": 4000
+            },
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Grey Mountains",
+                "vnum": 3168,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            }
+        ]
+    },
+    "8003": {
+        "mob": {
+            "name": "Gypsy",
+            "short_desc": "a gypsy innkeeper",
+            "long_desc": "A gypsy innkeeper is here, waiting for costumers.",
+            "buy": 15,
+            "sell": 110
+        },
+        "room": "The Gypsy Inn",
+        "area": "Gypsy Village",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            }
+        ]
+    },
+    "8007": {
+        "mob": {
+            "name": "Gypsy",
+            "short_desc": "a blacksmith",
+            "long_desc": "A blacksmith is working here.",
+            "buy": 15,
+            "sell": 110
+        },
+        "room": "The Arms Shop",
+        "area": "Gypsy Village",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            }
+        ]
+    },
+    "8008": {
+        "mob": {
+            "name": "Gypsy",
+            "short_desc": "an armourer",
+            "long_desc": "An armourer is standing here.",
+            "buy": 15,
+            "sell": 110
+        },
+        "room": "The House of Armours",
+        "area": "Gypsy Village",
+        "list": [
+            {
+                "count": 2,
+                "short_desc": "a large metal shield",
+                "vnum": 23219,
+                "worth": 6000
+            }
+        ]
+    },
+    "12916": {
+        "mob": {
+            "name": "Armourer",
+            "short_desc": "an armourer of Hornburg",
+            "long_desc": "An armourer of Hornburg is standing here.",
+            "buy": 30,
+            "sell": 130
+        },
+        "room": "Armoury of the Hornburg",
+        "area": "Helm's Deep",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a small green hat",
+                "vnum": 7825,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "an elven boots",
+                "vnum": 7801,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of green leggings",
+                "vnum": 7826,
+                "worth": 660
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of green gloves",
+                "vnum": 7827,
+                "worth": 340
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of green sleeves",
+                "vnum": 7828,
+                "worth": 620
+            },
+            {
+                "count": 1,
+                "short_desc": "a green coat",
+                "vnum": 7830,
+                "worth": 1830
+            },
+            {
+                "count": 1,
+                "short_desc": "a green belt",
+                "vnum": 7832,
+                "worth": 1500
+            },
+            {
+                "count": 2,
+                "short_desc": "a dwarven battle axe",
+                "vnum": 4706,
+                "worth": 10000
+            },
+            {
+                "count": 1,
+                "short_desc": "a dwarven helm",
+                "vnum": 4702,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a dwarven breastplate",
+                "vnum": 4703,
+                "worth": 1500
+            },
+            {
+                "count": 2,
+                "short_desc": "an elven longsword",
+                "vnum": 7802,
+                "worth": 6000
+            },
+            {
+                "count": 1,
+                "short_desc": "a grey hood",
+                "vnum": 1116,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of grey gloves",
+                "vnum": 1118,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a small metal shield",
+                "vnum": 3097,
+                "worth": 500
+            },
+            {
+                "count": 1,
+                "short_desc": "a large metal shield",
+                "vnum": 3116,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a small wooden shield",
+                "vnum": 3117,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a guardian shield",
+                "vnum": 3354,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a small round shield",
+                "vnum": 3704,
+                "worth": 0
+            }
+        ]
+    },
+    "1305": {
+        "mob": {
+            "name": "Strick",
+            "short_desc": "Strick the bartender",
+            "long_desc": "Strick is here levitating drinks to his customers.",
+            "buy": 50,
+            "sell": 210
+        },
+        "room": "Mages Tavern",
+        "area": "High Tower of Sorcery",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            }
+        ]
+    },
+    "1306": {
+        "mob": {
+            "name": "Tatorious",
+            "short_desc": "Tatorious",
+            "long_desc": "Tatorious the wizard is here counting his earnings.",
+            "buy": 30,
+            "sell": 250
+        },
+        "room": "The Magic Shop",
+        "area": "High Tower of Sorcery",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            }
+        ]
+    },
+    "1353": {
+        "mob": {
+            "name": "Librarian",
+            "short_desc": "the Librarian",
+            "long_desc": "The Librarian has fallen asleep at his desk here.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "The entrance to the library",
+        "area": "High Tower of Sorcery",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a scroll of cancellation",
+                "vnum": 3039,
+                "worth": 64000
+            },
+            {
+                "count": 1,
+                "short_desc": "a scroll of identify",
+                "vnum": 3040,
+                "worth": 50000
+            },
+            {
+                "count": 1,
+                "short_desc": "a scroll of recall",
+                "vnum": 3042,
+                "worth": 30800
+            }
+        ]
+    },
+    "5622": {
+        "mob": {
+            "name": "Demon",
+            "short_desc": "the weaponsmaster",
+            "long_desc": "The demon weaponsmaster is shadow-boxing here.",
+            "buy": 15,
+            "sell": 105
+        },
+        "room": "The Lair",
+        "area": "Iron Mountains",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a long dagger",
+                "vnum": 23204,
+                "worth": 500
+            },
+            {
+                "count": 1,
+                "short_desc": "a big, massive stone club",
+                "vnum": 23223,
+                "worth": 3000
+            },
+            {
+                "count": 1,
+                "short_desc": "a body ringmail",
+                "vnum": 23210,
+                "worth": 15000
+            }
+        ]
+    },
+    "5621": {
+        "mob": {
+            "name": "Demon",
+            "short_desc": "Marilith",
+            "long_desc": "Marilith slithers here.",
+            "buy": 15,
+            "sell": 105
+        },
+        "room": "The Lair",
+        "area": "Iron Mountains",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a purple potion",
+                "vnum": 23245,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a green potion",
+                "vnum": 23248,
+                "worth": 9000
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            }
+        ]
+    },
+    "8707": {
+        "mob": {
+            "name": "Brimm",
+            "short_desc": "the flour-covered dwarf",
+            "long_desc": "A flour-covered dwarf stands behind the counter, kneading some dough.",
+            "buy": 100,
+            "sell": 100
+        },
+        "room": "Brimm's Bakery",
+        "area": "Khanlardin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            }
+        ]
+    },
+    "8708": {
+        "mob": {
+            "name": "Elric",
+            "short_desc": "the dwarf in the leather apron",
+            "long_desc": "A dwarf in a leather apron stands behind the counter, guarding his wares.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "Elric's Eqipment Shop",
+        "area": "Khanlardin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a long dagger",
+                "vnum": 23204,
+                "worth": 500
+            }
+        ]
+    },
+    "8712": {
+        "mob": {
+            "name": "Aedric",
+            "short_desc": "the wrinkled old dwarf",
+            "long_desc": "A wrinkled old dwarf is mixing a potion behind the counter.",
+            "buy": 35,
+            "sell": 125
+        },
+        "room": "Aedric's Alchemistry",
+        "area": "Khanlardin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            }
+        ]
+    },
+    "8899": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "the old lizardman",
+            "long_desc": "An old lizardman is standing behind the counter.",
+            "buy": 25,
+            "sell": 200
+        },
+        "room": "Small Room",
+        "area": "Khanlardin",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a pink potion",
+                "vnum": 23249,
+                "worth": 600
+            }
+        ]
+    },
+    "3000": {
+        "mob": {
+            "name": "Wizard",
+            "short_desc": "the wizard",
+            "long_desc": "A wizard walks around behind the counter, talking to himself.",
+            "buy": 15,
+            "sell": 105
+        },
+        "room": "The Magic Shop",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a runed scroll",
+                "vnum": 23251,
+                "worth": 1500
+            },
+            {
+                "count": 1,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            }
+        ]
+    },
+    "3001": {
+        "mob": {
+            "name": "Baker",
+            "short_desc": "the baker",
+            "long_desc": "The baker looks at you calmly, wiping flour from his face with one hand.",
+            "buy": 100,
+            "sell": 110
+        },
+        "room": "The Bakery",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            }
+        ]
+    },
+    "3003": {
+        "mob": {
+            "name": "Dain",
+            "short_desc": "dain the weaponsmith",
+            "long_desc": "Dain the weaponsmith is standing here.",
+            "buy": 40,
+            "sell": 130
+        },
+        "room": "The Weapon Shop",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a long dagger",
+                "vnum": 23204,
+                "worth": 500
+            },
+            {
+                "count": 3,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a woodaxe",
+                "vnum": 23208,
+                "worth": 270
+            },
+            {
+                "count": 1,
+                "short_desc": "an iron-bounded flail",
+                "vnum": 23207,
+                "worth": 350
+            }
+        ]
+    },
+    "3004": {
+        "mob": {
+            "name": "Elinor",
+            "short_desc": "Elinor",
+            "long_desc": "Elinor the armourer stands here.",
+            "buy": 50,
+            "sell": 100
+        },
+        "room": "Armoury",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 2,
+                "short_desc": "a leather jacket",
+                "vnum": 23209,
+                "worth": 300
+            },
+            {
+                "count": 2,
+                "short_desc": "a hard leather helmet",
+                "vnum": 23214,
+                "worth": 900
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of soft leather boots",
+                "vnum": 23202,
+                "worth": 1200
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of rigid leather gloves",
+                "vnum": 23203,
+                "worth": 1200
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of rigid leather sleeves",
+                "vnum": 23201,
+                "worth": 1500
+            },
+            {
+                "count": 2,
+                "short_desc": "a large metal shield",
+                "vnum": 23219,
+                "worth": 6000
+            },
+            {
+                "count": 2,
+                "short_desc": "a large wooden shield",
+                "vnum": 23220,
+                "worth": 4000
+            }
+        ]
+    },
+    "3174": {
+        "mob": {
+            "name": "Barn",
+            "short_desc": "Barn the armourer",
+            "long_desc": "Barn the armourer stands here.",
+            "buy": 50,
+            "sell": 100
+        },
+        "room": "Barn's Armour",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a plain leather shirt",
+                "vnum": 23211,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a leather bracelet",
+                "vnum": 23237,
+                "worth": 500
+            },
+            {
+                "count": 1,
+                "short_desc": "a headband with bright jewel",
+                "vnum": 23236,
+                "worth": 10000
+            }
+        ]
+    },
+    "3006": {
+        "mob": {
+            "name": "Captain",
+            "short_desc": "the captain",
+            "long_desc": "A retired captain stands here, selling boats.",
+            "buy": 90,
+            "sell": 120
+        },
+        "room": "Levee",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            }
+        ]
+    },
+    "3009": {
+        "mob": {
+            "name": "Jeweller",
+            "short_desc": "the jeweller",
+            "long_desc": "The jeweller is standing behind the desk.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "A Jeweller's Shop",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a golden ring",
+                "vnum": 23229,
+                "worth": 20000
+            },
+            {
+                "count": 1,
+                "short_desc": "a dark ring",
+                "vnum": 23312,
+                "worth": 54300
+            },
+            {
+                "count": 1,
+                "short_desc": "a reptile symbol",
+                "vnum": 23311,
+                "worth": 54300
+            },
+            {
+                "count": 1,
+                "short_desc": "an amulet",
+                "vnum": 23233,
+                "worth": 10000
+            }
+        ]
+    },
+    "3010": {
+        "mob": {
+            "name": "Leather",
+            "short_desc": "the leather worker",
+            "long_desc": "The leather worker is sitting by the table, sewing a leather cap.",
+            "buy": 50,
+            "sell": 110
+        },
+        "room": "The Leather Shop",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a leather jacket",
+                "vnum": 23209,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a soft leather cap",
+                "vnum": 23213,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of soft leather boots",
+                "vnum": 23202,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather gloves",
+                "vnum": 23203,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather sleeves",
+                "vnum": 23201,
+                "worth": 1500
+            },
+            {
+                "count": 1,
+                "short_desc": "a plain leather shirt",
+                "vnum": 23211,
+                "worth": 900
+            },
+            {
+                "count": 1,
+                "short_desc": "a leather belt",
+                "vnum": 23216,
+                "worth": 800
+            }
+        ]
+    },
+    "3040": {
+        "mob": {
+            "name": "Bartender",
+            "short_desc": "the bartender",
+            "long_desc": "A bartender watches you calmly, while he skilfully mixes a drink.",
+            "buy": 100,
+            "sell": 110
+        },
+        "room": "The Grunting Boar",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a quart of ale",
+                "vnum": 649,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a barrel of ale",
+                "vnum": 1772,
+                "worth": 10
+            }
+        ]
+    },
+    "3175": {
+        "mob": {
+            "name": "Andy",
+            "short_desc": "Andy the bartender",
+            "long_desc": "Andy looks at you happily, while mixing a drink.",
+            "buy": 100,
+            "sell": 110
+        },
+        "room": "The Bar",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a quart of ale",
+                "vnum": 649,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a barrel of ale",
+                "vnum": 1772,
+                "worth": 10
+            }
+        ]
+    },
+    "3046": {
+        "mob": {
+            "name": "Filthy",
+            "short_desc": "Filthy",
+            "long_desc": "Filthy is standing here, eager to serve you a special drink.",
+            "buy": 90,
+            "sell": 100
+        },
+        "room": "Grubby Inn",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a quart of ale",
+                "vnum": 649,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a barrel of ale",
+                "vnum": 1772,
+                "worth": 10
+            }
+        ]
+    },
+    "3070": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "the ancient potion-brewer",
+            "long_desc": "An old man eyes you greedily.",
+            "buy": 100,
+            "sell": 400
+        },
+        "room": "The Fountain of Youth Apothecary",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            },
+            {
+                "count": 1,
+                "short_desc": "a pink potion",
+                "vnum": 23249,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a green potion",
+                "vnum": 23248,
+                "worth": 9000
+            },
+            {
+                "count": 1,
+                "short_desc": "a white potion",
+                "vnum": 23246,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a purple potion",
+                "vnum": 23245,
+                "worth": 900
+            }
+        ]
+    },
+    "3150": {
+        "mob": {
+            "name": "Esme",
+            "short_desc": "Esme",
+            "long_desc": "Esme the waitress hums to herself and wonders what you'd like to order.",
+            "buy": 100,
+            "sell": 100
+        },
+        "room": "Kate's Diner",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            }
+        ]
+    },
+    "3160": {
+        "mob": {
+            "name": "Melancholy",
+            "short_desc": "Melancholy",
+            "long_desc": "Melancholy is here, digging through a pile of scrolls, papers, and maps.",
+            "buy": 100,
+            "sell": 100
+        },
+        "room": "Melancholy's Maps",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a map of Cruel 'Lost World'",
+                "vnum": 3169,
+                "worth": 1300
+            },
+            {
+                "count": 1,
+                "short_desc": "a map of Dorpat",
+                "vnum": 3167,
+                "worth": 900
+            }
+        ]
+    },
+    "3163": {
+        "mob": {
+            "name": "Blacksmith",
+            "short_desc": "the blacksmith",
+            "long_desc": "The blacksmith stands here pumping air into his fire.",
+            "buy": 100,
+            "sell": 120
+        },
+        "room": "The House of Blacksmith",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a metal breastplate",
+                "vnum": 23302,
+                "worth": 150000
+            },
+            {
+                "count": 1,
+                "short_desc": "a metal helmet",
+                "vnum": 23303,
+                "worth": 150000
+            },
+            {
+                "count": 1,
+                "short_desc": "a chain mail gloves",
+                "vnum": 23304,
+                "worth": 105000
+            },
+            {
+                "count": 1,
+                "short_desc": "a chain mail sleeves",
+                "vnum": 23305,
+                "worth": 105000
+            },
+            {
+                "count": 1,
+                "short_desc": "a chain mail leggings",
+                "vnum": 23306,
+                "worth": 105000
+            },
+            {
+                "count": 1,
+                "short_desc": "a metal boots",
+                "vnum": 23307,
+                "worth": 105000
+            },
+            {
+                "count": 1,
+                "short_desc": "a full metal armour",
+                "vnum": 23308,
+                "worth": 150000
+            }
+        ]
+    },
+    "3100": {
+        "mob": {
+            "name": "Maid",
+            "short_desc": "the maid",
+            "long_desc": "The maid is waiting for your order.",
+            "buy": 90,
+            "sell": 110
+        },
+        "room": "Park Cafe",
+        "area": "Lindanise",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a quart of ale",
+                "vnum": 649,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a barrel of ale",
+                "vnum": 1772,
+                "worth": 10
+            }
+        ]
+    },
+    "2335": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "a shopkeeper",
+            "long_desc": "A busy minotaur is here, organising his goods.",
+            "buy": 10,
+            "sell": 110
+        },
+        "room": "The Mahn-Tor Equipment Shop",
+        "area": "Keep of Mahn-Tor",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "an iron helmet",
+                "vnum": 23228,
+                "worth": 10000
+            },
+            {
+                "count": 1,
+                "short_desc": "a body ringmail",
+                "vnum": 23210,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a morningstar",
+                "vnum": 3391,
+                "worth": 100
+            }
+        ]
+    },
+    "2336": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "a shopkeeper",
+            "long_desc": "A bored minotaur is here, disturbed by your present.",
+            "buy": 10,
+            "sell": 110
+        },
+        "room": "The Mahn-Tor General Store",
+        "area": "Keep of Mahn-Tor",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            }
+        ]
+    },
+    "4163": {
+        "mob": {
+            "name": "Grocer",
+            "short_desc": "Grychmak",
+            "long_desc": "Grychmak stands at the counter, with a slightly impatient look on his face.",
+            "buy": 50,
+            "sell": 140
+        },
+        "room": "Grychmak's general store",
+        "area": "Moria",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a waterskin",
+                "vnum": 23260,
+                "worth": 150
+            },
+            {
+                "count": 1,
+                "short_desc": "a large sack",
+                "vnum": 23261,
+                "worth": 250
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 3,
+                "short_desc": "a red coloured ring",
+                "vnum": 4104,
+                "worth": 1200
+            },
+            {
+                "count": 3,
+                "short_desc": "an orkish draught",
+                "vnum": 23270,
+                "worth": 3000
+            },
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            }
+        ]
+    },
+    "4164": {
+        "mob": {
+            "name": "Armourer",
+            "short_desc": "an armourer",
+            "long_desc": "An armourer stands here.",
+            "buy": 55,
+            "sell": 160
+        },
+        "room": "Leather shop",
+        "area": "Moria",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a twohanded orkish waraxe",
+                "vnum": 23241,
+                "worth": 15000
+            },
+            {
+                "count": 2,
+                "short_desc": "a black thorn",
+                "vnum": 23267,
+                "worth": 1500
+            },
+            {
+                "count": 4,
+                "short_desc": "a bloody mace",
+                "vnum": 3390,
+                "worth": 100
+            },
+            {
+                "count": 7,
+                "short_desc": "a broad orkish scimitar",
+                "vnum": 4110,
+                "worth": 7500
+            },
+            {
+                "count": 2,
+                "short_desc": "a large orkish scimitar",
+                "vnum": 4114,
+                "worth": 45000
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of black leggings",
+                "vnum": 4108,
+                "worth": 600
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of black boots",
+                "vnum": 4105,
+                "worth": 600
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of black gloves",
+                "vnum": 4109,
+                "worth": 600
+            },
+            {
+                "count": 2,
+                "short_desc": "a pair of black sleeves",
+                "vnum": 4106,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a black horned headband",
+                "vnum": 4111,
+                "worth": 15000
+            },
+            {
+                "count": 2,
+                "short_desc": "a belt with small pouches",
+                "vnum": 4112,
+                "worth": 1500
+            },
+            {
+                "count": 2,
+                "short_desc": "a black coat",
+                "vnum": 4107,
+                "worth": 1500
+            },
+            {
+                "count": 5,
+                "short_desc": "a large metal shield",
+                "vnum": 23219,
+                "worth": 6000
+            },
+            {
+                "count": 1,
+                "short_desc": "a body ringmail",
+                "vnum": 23210,
+                "worth": 15000
+            }
+        ]
+    },
+    "4178": {
+        "mob": {
+            "name": "Trader",
+            "short_desc": "trader",
+            "long_desc": "The slave and beast trader is here, willing to sell someone.",
+            "buy": 100,
+            "sell": 130
+        },
+        "room": "The slave and animal trade",
+        "area": "Moria",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "the irony key",
+                "vnum": 4101,
+                "worth": 3
+            }
+        ]
+    },
+    "606": {
+        "mob": {
+            "name": "Madam",
+            "short_desc": "Madam Tracy",
+            "long_desc": "Madam Tracy is here, selling and buying little treasures.",
+            "buy": 80,
+            "sell": 120
+        },
+        "room": "The Pawn Shop.",
+        "area": "New Ofcol",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "an Ofcol signet ring",
+                "vnum": 620,
+                "worth": 3100
+            }
+        ]
+    },
+    "607": {
+        "mob": {
+            "name": "Marty",
+            "short_desc": "Marty",
+            "long_desc": "Marty the meat store owner is here, selling you his choice meats.",
+            "buy": 10,
+            "sell": 120
+        },
+        "room": "The Meat Store",
+        "area": "New Ofcol",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a side of beef",
+                "vnum": 602,
+                "worth": 510
+            },
+            {
+                "count": 1,
+                "short_desc": "a side of pork",
+                "vnum": 603,
+                "worth": 310
+            },
+            {
+                "count": 1,
+                "short_desc": "a side of horse",
+                "vnum": 604,
+                "worth": 812
+            },
+            {
+                "count": 1,
+                "short_desc": "a defeathered chicken",
+                "vnum": 605,
+                "worth": 170
+            }
+        ]
+    },
+    "608": {
+        "mob": {
+            "name": "Elizabeth",
+            "short_desc": "Farmer Elizabeth",
+            "long_desc": "Farmer Elizabeth is here, selling the latest crop.",
+            "buy": 10,
+            "sell": 120
+        },
+        "room": "Farmer's Market",
+        "area": "New Ofcol",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "some grain",
+                "vnum": 665,
+                "worth": 500
+            },
+            {
+                "count": 1,
+                "short_desc": "some corn",
+                "vnum": 667,
+                "worth": 500
+            }
+        ]
+    },
+    "622": {
+        "mob": {
+            "name": "Nyles",
+            "short_desc": "Nyles the Bartender",
+            "long_desc": "Nyles the Bartender is here, ready to serve you up a good brew.",
+            "buy": 10,
+            "sell": 120
+        },
+        "room": "Nyles' House of Ale",
+        "area": "New Ofcol",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a shot of whiskey",
+                "vnum": 648,
+                "worth": 210
+            },
+            {
+                "count": 1,
+                "short_desc": "a quart of ale",
+                "vnum": 649,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a quart of port brew",
+                "vnum": 650,
+                "worth": 200
+            }
+        ]
+    },
+    "635": {
+        "mob": {
+            "name": "Luxan",
+            "short_desc": "Luxan",
+            "long_desc": "Luxan the Shopkeeper is here, eager to sell you anything.",
+            "buy": 60,
+            "sell": 120
+        },
+        "room": "Luxan's mixed shop",
+        "area": "New Ofcol",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a head of cabbage",
+                "vnum": 609,
+                "worth": 60
+            },
+            {
+                "count": 1,
+                "short_desc": "a head of lettuce",
+                "vnum": 610,
+                "worth": 30
+            }
+        ]
+    },
+    "636": {
+        "mob": {
+            "name": "Keeper",
+            "short_desc": "the Innkeeper",
+            "long_desc": "An Innkeeper is here waiting for your order.",
+            "buy": 100,
+            "sell": 110
+        },
+        "room": "The Local Inn",
+        "area": "New Ofcol",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a shot of whiskey",
+                "vnum": 648,
+                "worth": 210
+            },
+            {
+                "count": 1,
+                "short_desc": "a quart of ale",
+                "vnum": 649,
+                "worth": 200
+            },
+            {
+                "count": 1,
+                "short_desc": "a quart of port brew",
+                "vnum": 650,
+                "worth": 200
+            }
+        ]
+    },
+    "401": {
+        "mob": {
+            "name": "Dead",
+            "short_desc": "The Reaper of the Dead",
+            "long_desc": "The Reaper of the Dead awaits here to decide your fate. ",
+            "buy": 50,
+            "sell": 100
+        },
+        "room": "The Purgatory",
+        "area": "Purgatory",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a drop of elves' tear",
+                "vnum": 401,
+                "worth": 600
+            },
+            {
+                "count": 3,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a potion of cure blindness",
+                "vnum": 3087,
+                "worth": 2000
+            },
+            {
+                "count": 1,
+                "short_desc": "a dark red potion",
+                "vnum": 1741,
+                "worth": 450
+            }
+        ]
+    },
+    "1113": {
+        "mob": {
+            "name": "Innkeeper",
+            "short_desc": "the Innkeeper",
+            "long_desc": "The Innkeeper stands here awaiting your order.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "The Ivy Bush",
+        "area": "Shire",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "an egg",
+                "vnum": 1110,
+                "worth": 9
+            }
+        ]
+    },
+    "1118": {
+        "mob": {
+            "name": "Shopkeeper",
+            "short_desc": "the shopkeeper",
+            "long_desc": "the shopkeeper smiles and patiently waits for you to buy something.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "The General Store",
+        "area": "Shire",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bag",
+                "vnum": 1111,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a glowing ball of fire",
+                "vnum": 23230,
+                "worth": 300
+            },
+            {
+                "count": 3,
+                "short_desc": "a warm scarf",
+                "vnum": 1114,
+                "worth": 600
+            },
+            {
+                "count": 2,
+                "short_desc": "a grey wooly jacket",
+                "vnum": 1115,
+                "worth": 300
+            },
+            {
+                "count": 3,
+                "short_desc": "a grey hood",
+                "vnum": 1116,
+                "worth": 300
+            },
+            {
+                "count": 2,
+                "short_desc": "a grey pants",
+                "vnum": 1117,
+                "worth": 300
+            },
+            {
+                "count": 3,
+                "short_desc": "a pair of grey gloves",
+                "vnum": 1118,
+                "worth": 300
+            },
+            {
+                "count": 3,
+                "short_desc": "a pair of grey sleeves",
+                "vnum": 1119,
+                "worth": 400
+            },
+            {
+                "count": 2,
+                "short_desc": "a grey coat",
+                "vnum": 1120,
+                "worth": 900
+            },
+            {
+                "count": 3,
+                "short_desc": "a grey belt",
+                "vnum": 1121,
+                "worth": 300
+            },
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            }
+        ]
+    },
+    "1120": {
+        "mob": {
+            "name": "Blacksmith",
+            "short_desc": "the blacksmith",
+            "long_desc": "The blacksmith bids you welcome to his humble store.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "The House of Arms",
+        "area": "Shire",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 3,
+                "short_desc": "a long dagger",
+                "vnum": 23204,
+                "worth": 500
+            },
+            {
+                "count": 3,
+                "short_desc": "a small metal shield",
+                "vnum": 23218,
+                "worth": 1000
+            }
+        ]
+    },
+    "1130": {
+        "mob": {
+            "name": "Innkeeper",
+            "short_desc": "the Innkeeper",
+            "long_desc": "The Innkeeper stands here awaiting your order.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "The Green Dragon Inn",
+        "area": "Shire",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "an egg",
+                "vnum": 1110,
+                "worth": 9
+            }
+        ]
+    },
+    "1933": {
+        "mob": {
+            "name": "Benno",
+            "short_desc": "benno the Butcher",
+            "long_desc": "Benno the Butcher is here whacking away at a side of beef.",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "The butchery",
+        "area": "Shire",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            }
+        ]
+    },
+    "4808": {
+        "mob": {
+            "name": "Matt",
+            "short_desc": "Matt the brewmaster",
+            "long_desc": "Matt the brewmaster is here looking for something to drink.",
+            "buy": 15,
+            "sell": 105
+        },
+        "room": "Matt's Brewery.",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bottle of ale",
+                "vnum": 3002,
+                "worth": 10
+            }
+        ]
+    },
+    "4809": {
+        "mob": {
+            "name": "Mcbaker",
+            "short_desc": "the Mcbaker",
+            "long_desc": "The Mcbaker looks at you calmly, wiping flour from his face with one hand.",
+            "buy": 100,
+            "sell": 110
+        },
+        "room": "The McBakery",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 3011,
+                "worth": 10
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            }
+        ]
+    },
+    "4819": {
+        "mob": {
+            "name": "Jhen",
+            "short_desc": "Jhen the farmer",
+            "long_desc": "Jhen the farmer is here.",
+            "buy": 100,
+            "sell": 110
+        },
+        "room": "Jhen's Vegetable Cart.",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a piece of meat",
+                "vnum": 3014,
+                "worth": 18
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            }
+        ]
+    },
+    "4820": {
+        "mob": {
+            "name": "Kolbein",
+            "short_desc": "Kolbein the armourer",
+            "long_desc": "Kolbein the armourer is here looking at his wares.",
+            "buy": 100,
+            "sell": 110
+        },
+        "room": "Kolbein's Armoury.",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a body ringmail",
+                "vnum": 23210,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a large metal shield",
+                "vnum": 3116,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather gloves",
+                "vnum": 23203,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of rigid leather sleeves",
+                "vnum": 23201,
+                "worth": 1500
+            },
+            {
+                "count": 1,
+                "short_desc": "a pair of soft leather boots",
+                "vnum": 23202,
+                "worth": 1200
+            },
+            {
+                "count": 1,
+                "short_desc": "a hard leather helmet",
+                "vnum": 23214,
+                "worth": 900
+            }
+        ]
+    },
+    "4821": {
+        "mob": {
+            "name": "Janni",
+            "short_desc": "Janni",
+            "long_desc": "Janni is here.",
+            "buy": 75,
+            "sell": 125
+        },
+        "room": "Janni's Souvenirs.",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a strange amulet",
+                "vnum": 307,
+                "worth": 500
+            },
+            {
+                "count": 1,
+                "short_desc": "a bright ball of light",
+                "vnum": 21,
+                "worth": 0
+            }
+        ]
+    },
+    "4822": {
+        "mob": {
+            "name": "Nebron",
+            "short_desc": "Nebron the weaponsmaster",
+            "long_desc": "Nebron the weaponsmaster is sharpening a knife here.",
+            "buy": 75,
+            "sell": 125
+        },
+        "room": "Nebron's Weaponry",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a sharp knife",
+                "vnum": 23222,
+                "worth": 9000
+            },
+            {
+                "count": 1,
+                "short_desc": "a longsword",
+                "vnum": 23205,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a morningstar",
+                "vnum": 3391,
+                "worth": 100
+            }
+        ]
+    },
+    "4823": {
+        "mob": {
+            "name": "Molin",
+            "short_desc": "Molin the brewer",
+            "long_desc": "Molin the brewer is here looking at his empty cup.",
+            "buy": 75,
+            "sell": 125
+        },
+        "room": "Molin's Mulburry Extracts.",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a pink potion",
+                "vnum": 23249,
+                "worth": 600
+            },
+            {
+                "count": 1,
+                "short_desc": "a yellow potion",
+                "vnum": 23250,
+                "worth": 5000
+            },
+            {
+                "count": 2,
+                "short_desc": "a staff called sense of life",
+                "vnum": 4809,
+                "worth": 1500000
+            }
+        ]
+    },
+    "4825": {
+        "mob": {
+            "name": "Lexie",
+            "short_desc": "Lexie",
+            "long_desc": "Lexie is here.",
+            "buy": 75,
+            "sell": 125
+        },
+        "room": "Lexie's Sea Store",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a canoe",
+                "vnum": 23263,
+                "worth": 1000
+            },
+            {
+                "count": 1,
+                "short_desc": "a raft",
+                "vnum": 3050,
+                "worth": 400
+            }
+        ]
+    },
+    "4826": {
+        "mob": {
+            "name": "Croben",
+            "short_desc": "Croben",
+            "long_desc": "Croben is weaving a basket here.",
+            "buy": 75,
+            "sell": 125
+        },
+        "room": "Croben's Containers.",
+        "area": "Town of Solea",
+        "list": [
+            {
+                "count": 1,
+                "short_desc": "a bag",
+                "vnum": 1111,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a large sack",
+                "vnum": 23261,
+                "worth": 250
+            }
+        ]
+    },
+    "10406": {
+        "mob": {
+            "name": "Titan",
+            "short_desc": "a Titan",
+            "long_desc": "A Titan is here, selling weapons. ",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "Weaponry",
+        "area": "Titans' Stronghold",
+        "list": [
+            {
+                "count": 3,
+                "short_desc": "a steel broad sword",
+                "vnum": 1724,
+                "worth": 1200
+            }
+        ]
+    },
+    "10407": {
+        "mob": {
+            "name": "Titan",
+            "short_desc": "a Titan",
+            "long_desc": "A Titan is here, selling armour. ",
+            "buy": 50,
+            "sell": 150
+        },
+        "room": "Armoury",
+        "area": "Titans' Stronghold",
+        "list": [
+            {
+                "count": 2,
+                "short_desc": "a full metal armour",
+                "vnum": 23308,
+                "worth": 150000
+            },
+            {
+                "count": 2,
+                "short_desc": "a large metal shield",
+                "vnum": 3116,
+                "worth": 1000
+            },
+            {
+                "count": 2,
+                "short_desc": "a ring",
+                "vnum": 23212,
+                "worth": 1000
+            }
+        ]
+    },
+    "12000": {
+        "mob": {
+            "name": "Victualler",
+            "short_desc": "a victualler",
+            "long_desc": "A victualler is standing here.",
+            "buy": 10,
+            "sell": 110
+        },
+        "room": "Forest pub",
+        "area": "Underwood",
+        "list": [
+            {
+                "count": 5,
+                "short_desc": "a piece of white bread",
+                "vnum": 1504,
+                "worth": 15000
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 3011,
+                "worth": 10
+            },
+            {
+                "count": 1,
+                "short_desc": "a breadstick",
+                "vnum": 3153,
+                "worth": 5
+            },
+            {
+                "count": 1,
+                "short_desc": "a piece of lembas bread",
+                "vnum": 7835,
+                "worth": 1
+            },
+            {
+                "count": 1,
+                "short_desc": "a bread",
+                "vnum": 23258,
+                "worth": 50
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pot pie",
+                "vnum": 3009,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a big pie",
+                "vnum": 23259,
+                "worth": 100
+            },
+            {
+                "count": 1,
+                "short_desc": "a buffalo water skin",
+                "vnum": 3138,
+                "worth": 30
+            },
+            {
+                "count": 1,
+                "short_desc": "a barrel of beer",
+                "vnum": 3000,
+                "worth": 300
+            },
+            {
+                "count": 5,
+                "short_desc": "an orkish draught",
+                "vnum": 23270,
+                "worth": 3000
+            }
+        ]
+    }
+}
