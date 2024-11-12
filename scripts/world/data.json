@@ -52,6 +52,7 @@
         "Miden'Nir": 1,
         "Town of Solea": 1,
         "Jeddyland forest & town": 1,
+        "Lonely Grassland": 1,
         "Dorpat": 1
     },
     "Dark Forest": {
@@ -74,6 +75,7 @@
         "Miden'Nir": 1,
         "Rhowyn Forest": 1,
         "Lindanise": 2,
+        "Lonely Grassland": 3,
         "Elven Palace": 1,
         "Dwarven Kingdom": 1,
         "Dark Forest": 1,
@@ -182,6 +184,10 @@
     "Grand Waterfall": {
         "Green River and Island": 1,
         "Graveyard": 2
+    },
+    "Lonely Grassland": {
+        "Crystalmir Lake": 1,
+        "Dorpat": 3
     },
     "Graveyard": {
         "Thalos": 1,
