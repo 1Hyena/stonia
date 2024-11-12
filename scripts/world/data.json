@@ -1,0 +1,475 @@
+{
+    "Arachnos": {
+        "Haon Dor": 1
+    },
+    "Temple of Azakath": {
+        "Sands of Sorrow": 1
+    },
+    "Valley of Baldor": {
+        "Elven Valley": 1,
+        "Plains of the North": 1,
+        "Plain Wastelands": 1
+    },
+    "Barad-Dur": {
+        "Reptiles Island": 1,
+        "Lake Peipus": 2,
+        "Haon Dor": 1,
+        "Endless Air": 1
+    },
+    "Battle Arena": {
+        "Lindanise": 1
+    },
+    "Beavers Cave": {
+        "Dorpat": 1
+    },
+    "Black Marsh": {
+        "Northen Trail": 3
+    },
+    "Bog": {
+        "Old Marsh": 1
+    },
+    "British Valley": {
+        "Woodland": 1,
+        "Fort British": 3,
+        "Moria": 1
+    },
+    "Caves of Balrog": {
+        "Iron Mountains": 1,
+        "Eastern Path": 1
+    },
+    "Chapel Catacombs": {
+        "Graveyard": 6,
+        "Purgatory": 1,
+        "Descent to Hell": 2,
+        "Thalos": 1
+    },
+    "Clouds in the Air": {
+        "Purgatory": 1,
+        "Lindanise": 1,
+        "Endless Air": 4
+    },
+    "Crystalmir Lake": {
+        "Miden'Nir": 1,
+        "Town of Solea": 1,
+        "Jeddyland forest & town": 1,
+        "Dorpat": 1
+    },
+    "Dark Forest": {
+        "Dorpat": 1,
+        "Spider Haunt": 1,
+        "The Tauren forest": 1
+    },
+    "Demons' Keep": {
+        "Iron Mountains": 1,
+        "Moria": 1
+    },
+    "Descent to Hell": {
+        "Chapel Catacombs": 1
+    },
+    "Dorpat": {
+        "Sands of Sorrow": 2,
+        "Lost Mud-School": 1,
+        "Lower Dungeons of Stonia": 1,
+        "Endless Air": 2,
+        "Miden'Nir": 1,
+        "Rhowyn Forest": 1,
+        "Lindanise": 2,
+        "Elven Palace": 1,
+        "Dwarven Kingdom": 1,
+        "Dark Forest": 1,
+        "Spider Haunt": 1,
+        "Beavers Cave": 1,
+        "Crystalmir Lake": 1,
+        "Haon Dor": 3,
+        "Shire": 2,
+        "Fellin": 1,
+        "The Dragon Sea": 4
+    },
+    "The Dragon Sea": {
+        "Reptiles Island": 10,
+        "Dorpat": 4
+    },
+    "Dragon Tower": {
+        "Sands of Sorrow": 1,
+        "Endless Air": 1
+    },
+    "Drow Caves": {
+        "Thalos": 1
+    },
+    "Lower Dungeons of Stonia": {
+        "Moria": 1,
+        "Elven Valley": 1,
+        "Dwarven Catacombs": 1,
+        "Rats Lair": 1,
+        "Shire": 1,
+        "Dorpat": 1,
+        "Titans' Stronghold": 1,
+        "Graveyard": 1
+    },
+    "Dwarven Catacombs": {
+        "Dwarven Kingdom": 2,
+        "Lower Dungeons of Stonia": 1
+    },
+    "Dwarven Kingdom": {
+        "Mines of Juargan": 3,
+        "Dwarven Catacombs": 2,
+        "Dorpat": 1
+    },
+    "Eastern Path": {
+        "Shire": 1,
+        "Gnome Village": 1,
+        "Caves of Balrog": 1
+    },
+    "Elven Palace": {
+        "Haon Dor": 1,
+        "Dorpat": 1
+    },
+    "Elven Valley": {
+        "Plains of the North": 2,
+        "Valley of Baldor": 1,
+        "Lower Dungeons of Stonia": 1
+    },
+    "Empyrean": {
+        "Purgatory": 1
+    },
+    "Enchanted forest": {
+        "Plains of the North": 2
+    },
+    "Endless Air": {
+        "Thalos": 1,
+        "Lindanise": 1,
+        "Purgatory": 1,
+        "Clouds in the Air": 4,
+        "New Ofcol": 1,
+        "Wyvern's Tower": 1,
+        "Fellin": 1,
+        "Dorpat": 2,
+        "Dragon Tower": 1
+    },
+    "Fellin": {
+        "Dorpat": 1,
+        "Helm's Deep": 1,
+        "Endless Air": 1
+    },
+    "Land of the Fire Newts": {
+        "Moria": 1
+    },
+    "Forgotten Mines": {
+        "Miden'Nir": 1,
+        "Rats Lair": 1
+    },
+    "Fort British": {
+        "British Valley": 3,
+        "Thieves Forest": 1
+    },
+    "Town of Gerighelm": {
+        "Gerighelm Park": 1,
+        "Gerighelm Sewers": 1,
+        "Miden'Nir": 1,
+        "Haon Dor": 3
+    },
+    "Gerighelm Park": {
+        "Town of Gerighelm": 1
+    },
+    "Gerighelm Sewers": {
+        "Town of Gerighelm": 1
+    },
+    "Gnome Village": {
+        "Eastern Path": 1,
+        "Miden'Nir": 1,
+        "Moria": 1
+    },
+    "Grand Waterfall": {
+        "Green River and Island": 1,
+        "Graveyard": 2
+    },
+    "Graveyard": {
+        "Thalos": 1,
+        "Lower Dungeons of Stonia": 1,
+        "Chapel Catacombs": 4,
+        "Temple of Seth": 1,
+        "Grand Waterfall": 2
+    },
+    "Green River and Island": {
+        "Shire": 1,
+        "Grand Waterfall": 1
+    },
+    "Grey Mountains": {
+        "Titans' Stronghold": 1,
+        "Spider Haunt": 1,
+        "Old Marsh": 1,
+        "Little Haven\/Fortress": 1
+    },
+    "Gypsy Village": {
+        "Miden'Nir": 2,
+        "Sands of Sorrow": 1
+    },
+    "Haon Dor": {
+        "Wyvern's Tower": 2,
+        "Miden'Nir": 2,
+        "Dorpat": 3,
+        "Farmers Village": 1,
+        "New Ofcol": 1,
+        "Elven Palace": 1,
+        "Arachnos": 1,
+        "Town of Gerighelm": 3,
+        "High Tower of Sorcery": 3
+    },
+    "Helm's Deep": {
+        "Fellin": 1,
+        "Sands of Sorrow": 1
+    },
+    "High Tower of Sorcery": {
+        "Haon Dor": 3,
+        "Lindanise": 1
+    },
+    "Holy Grove": {
+        "Old Thalos": 1,
+        "Thalos": 1
+    },
+    "Immortal Zone": {
+        "Limbo": 2,
+        "Lindanise": 4
+    },
+    "Iron Mountains": {
+        "Moria": 4,
+        "Troll Caves": 1,
+        "Demons' Keep": 1,
+        "Caves of Balrog": 1
+    },
+    "Jeddyland forest & town": {
+        "Crystalmir Lake": 1
+    },
+    "Khanlardin": {
+        "Mines of Juargan": 1
+    },
+    "Mines of Juargan": {
+        "Dwarven Kingdom": 3,
+        "Thalos": 1,
+        "Khanlardin": 1,
+        "Town of Solea": 1
+    },
+    "Lair of Werewolves": {
+        "Rhowyn Forest": 1,
+        "Shire": 1
+    },
+    "Lake Peipus": {
+        "Little Haven\/Fortress": 1,
+        "Barad-Dur": 2
+    },
+    "Limbo": {
+        "Immortal Zone": 1,
+        "Elven Valley": 1,
+        "Dorpat": 1,
+        "Shire": 1,
+        "Dwarven Kingdom": 1,
+        "Moria": 2,
+        "Iron Mountains": 1,
+        "Sands of Sorrow": 1,
+        "Grey Mountains": 3,
+        "Descent to Hell": 1,
+        "Temple of Seth": 1,
+        "Chapel Catacombs": 2,
+        "Lindanise": 3
+    },
+    "Lindanise": {
+        "Plains of the North": 2,
+        "Rats Lair": 1,
+        "Miden'Nir": 1,
+        "Immortal Zone": 2,
+        "Endless Air": 1,
+        "Dorpat": 2,
+        "Rabbit Plains": 1
+    },
+    "Little Haven\/Fortress": {
+        "Sands of Sorrow": 1,
+        "Grey Mountains": 1,
+        "Lake Peipus": 1
+    },
+    "Keep of Mahn-Tor": {
+        "Sands of Sorrow": 1,
+        "Molodir's Curse": 1
+    },
+    "Memberland": {
+        "Plains of the North": 1,
+        "British Valley": 1
+    },
+    "Miden'Nir": {
+        "Moria": 1,
+        "Plain Wastelands": 1,
+        "Forgotten Mines": 1,
+        "Lindanise": 1,
+        "Thalos": 1,
+        "Crystalmir Lake": 1,
+        "Rhowyn Forest": 1,
+        "Haon Dor": 2,
+        "Gypsy Village": 2,
+        "Dorpat": 2,
+        "Gnome Village": 1,
+        "Town of Solea": 1,
+        "Town of Gerighelm": 1
+    },
+    "Molodir's Curse": {
+        "Keep of Mahn-Tor": 1
+    },
+    "Moria": {
+        "Miden'Nir": 1,
+        "British Valley": 1,
+        "Iron Mountains": 4,
+        "Underwood": 1,
+        "Land of the Fire Newts": 1,
+        "Gnome Village": 1,
+        "Lower Dungeons of Stonia": 1,
+        "Limbo": 1,
+        "Demons' Keep": 1
+    },
+    "Lost Mud-School": {
+        "Dorpat": 1
+    },
+    "New Ofcol": {
+        "Endless Air": 1,
+        "Haon Dor": 1
+    },
+    "Northen Trail": {
+        "Thieves Forest": 3,
+        "Black Marsh": 3
+    },
+    "Old Marsh": {
+        "Sands of Sorrow": 1,
+        "Bog": 1,
+        "Grey Mountains": 1
+    },
+    "Old Thalos": {
+        "Thalos": 2,
+        "Holy Grove": 1
+    },
+    "Plains of the North": {
+        "Lindanise": 2,
+        "Woodland": 1,
+        "Under the Sorbus's Hut": 1,
+        "Rhowyn Forest": 2,
+        "Plain Wastelands": 2,
+        "Elven Valley": 2,
+        "WatchTower": 1,
+        "Thalos": 1,
+        "Valley of Baldor": 1
+    },
+    "Purgatory": {
+        "Clouds in the Air": 1,
+        "Endless Air": 1,
+        "Chapel Catacombs": 1,
+        "Empyrean": 1
+    },
+    "Rabbit Plains": {
+        "Thalos": 1,
+        "Lindanise": 1
+    },
+    "Rats Lair": {
+        "Lindanise": 1,
+        "Lower Dungeons of Stonia": 1,
+        "Forgotten Mines": 1
+    },
+    "Reptiles Island": {
+        "The Dragon Sea": 10,
+        "Barad-Dur": 1
+    },
+    "Rhowyn Forest": {
+        "Plains of the North": 2,
+        "Dorpat": 1,
+        "Lair of Werewolves": 1,
+        "Miden'Nir": 1,
+        "Shire": 1
+    },
+    "Sands of Sorrow": {
+        "Dorpat": 2,
+        "Gypsy Village": 1,
+        "Little Haven\/Fortress": 1,
+        "Beavers Cave": 1,
+        "Old Marsh": 1,
+        "Keep of Mahn-Tor": 1,
+        "Dragon Tower": 1,
+        "Helm's Deep": 1,
+        "Temple of Azakath": 1
+    },
+    "Shire": {
+        "Lower Dungeons of Stonia": 1,
+        "Eastern Path": 1,
+        "Lair of Werewolves": 1,
+        "Rhowyn Forest": 1,
+        "Dorpat": 2,
+        "Green River and Island": 1
+    },
+    "Snakes Lair": {
+        "Plain Wastelands": 1
+    },
+    "Farmers Village": {
+        "Haon Dor": 1
+    },
+    "Town of Solea": {
+        "Crystalmir Lake": 1,
+        "Miden'Nir": 1,
+        "Dorpat": 1,
+        "Mines of Juargan": 1
+    },
+    "Spider Haunt": {
+        "Dorpat": 1,
+        "Thalos": 1,
+        "Dark Forest": 1,
+        "Grey Mountains": 1
+    },
+    "The Tauren forest": {
+        "Dark Forest": 1
+    },
+    "Temple of Seth": {
+        "Graveyard": 1
+    },
+    "Thalos": {
+        "Chapel Catacombs": 1,
+        "Endless Air": 1,
+        "Old Thalos": 2,
+        "Rabbit Plains": 1,
+        "Holy Grove": 1,
+        "Graveyard": 1,
+        "Spider Haunt": 1,
+        "Drow Caves": 1,
+        "Plains of the North": 1,
+        "Mines of Juargan": 1,
+        "Miden'Nir": 1
+    },
+    "Thieves Forest": {
+        "Fort British": 1,
+        "Underwood": 1,
+        "Northen Trail": 3
+    },
+    "Titans' Stronghold": {
+        "Grey Mountains": 1,
+        "Lower Dungeons of Stonia": 1
+    },
+    "Troll Caves": {
+        "Iron Mountains": 1
+    },
+    "Under the Sorbus's Hut": {
+        "Plains of the North": 1
+    },
+    "Underwood": {
+        "Moria": 1,
+        "Thieves Forest": 1
+    },
+    "Plain Wastelands": {
+        "Miden'Nir": 1,
+        "Valley of Baldor": 1,
+        "Plains of the North": 2,
+        "Snakes Lair": 1
+    },
+    "WatchTower": {
+        "Plains of the North": 1
+    },
+    "Woodland": {
+        "Plains of the North": 1,
+        "British Valley": 1
+    },
+    "Wyvern's Tower": {
+        "Haon Dor": 2,
+        "Endless Air": 1
+    }
+}
