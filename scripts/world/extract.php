@@ -30,11 +30,13 @@ for ($i = 0; $i<count($files); ++$i) {
 
     $exit = array();
     $vnums = array();
+    $filename = basename($files[$i]);
 
     foreach ($area["rooms"] as $vnum=>$room) {
         $vnums[] = $vnum;
 
         if (!array_key_exists("exits", $room)) {
+            echo("no exits in room #".$vnum." (".$filename.")\n");
             continue;
         }
 
@@ -46,8 +48,6 @@ for ($i = 0; $i<count($files); ++$i) {
             $exit[$to_vnum] = null;
         }
     }
-
-    $filename = basename($files[$i]);
 
     for ($j = 0; $j<count($vnums); ++$j) {
         $area["rooms"][$vnums[$j]]["area"] = $area["header"]["title"];

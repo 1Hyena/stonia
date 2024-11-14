@@ -279,7 +279,11 @@ function parse_rooms($filepath) {
                 $buf = "";
             }
             else if ($buf !== null) {
-                $l = trim($line);
+                $l = implode(
+                    "", array_values(
+                        array_filter(explode(" ", trim($line)), 'strlen')
+                    )
+                );
 
                 if ($l === "D0"
                 ||  $l === "D1"
@@ -302,7 +306,7 @@ function parse_rooms($filepath) {
 
                         if (count($fields) >= 3) {
                             $fields[2] = trim($fields[2]);
-                            //echo "#".$vnum." -> ".$fields[2]."\n";
+
                             $fields = array_values(
                                 array_filter(explode(" ", $fields[2]), 'strlen')
                             );
