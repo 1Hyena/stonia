@@ -1,6 +1,6 @@
 <?php
 
-require('../utils.php');
+require('../db.php');
 
 if (count($argv) <= 1) {
     exit("usage: ".$argv[0]." path-to-areas\n");
@@ -12,53 +12,106 @@ if (!is_dir($areapath)) {
     exit('invalid diretory path: '.$areapath."\n");
 }
 
-$files = glob($areapath."/*.are");
+$listpath = $areapath."/area.lst";
 
-echo "found ".count($files)." areas\n";
+if (!file_exists($listpath)) {
+    exit($listpath." does not exist\n");
+}
 
-$areas = array();
-$rooms = array();
+$files = explode("\n", file_get_contents($listpath));
 
-for ($i = 0; $i<count($files); ++$i) {
-    echo "parsing ".$files[$i]."\n";
-
-    $area = parse_area($files[$i]);
-
-    if (!array_key_exists("title", $area["header"])) {
+for ($file_index = 0; $file_index < count($files); ++$file_index) {
+    if ($files[$file_index] === "$"
+    || !strlen($files[$file_index])) {
+        $files[$file_index] = "";
         continue;
     }
 
-    $exit = array();
-    $vnums = array();
-    $filename = basename($files[$i]);
+    $fpath = $areapath."/".$files[$file_index];
 
-    foreach ($area["rooms"] as $vnum=>$room) {
-        $vnums[] = $vnum;
+    if (!file_exists($fpath)) {
+        echo("area not found: ".$files[$file_index]."\n");
+        $files[$file_index] = "";
+        continue;
+    }
 
-        if (!array_key_exists("exits", $room)) {
-            echo("no exits in room #".$vnum." (".$filename.")\n");
+    $files[$file_index] = $areapath."/".$files[$file_index];
+}
+
+$files = array_values(array_filter($files, 'strlen'));
+
+echo "found ".count($files)." areas\n";
+
+$rooms = array();
+$areas = array();
+
+for ($file_index = 0; $file_index < count($files); ++$file_index) {
+    $filename = basename($files[$file_index]);
+
+    echo "parsing ".$filename."\n";
+
+    $data = load($files[$file_index], $STONIA);
+
+    if ($data === null || $data["area"] === null) {
+        continue;
+    }
+
+    $name_parts = explode("(", $data["area"]["name"]);
+    $area_title = trim($name_parts[0]);
+    $area_rooms = $data["rooms"];
+
+    if (is_string($area_rooms)) {
+        exit($filename.": ROOMS: ".$value."\n");
+    }
+
+    $collisions = vnums_to_dictionary($area_rooms, $rooms);
+
+    if (is_string($collisions)) {
+        exit($filename.": ROOMS: ".$collisions."\n");
+    }
+
+    foreach ($collisions as $vnum=>$value) {
+        echo($filename.": ROOMS: duplicate vnum #".$vnum."\n");
+    }
+
+    $area_exits = array();
+    $area_vnums = array();
+
+    $vnum_dictionary = array();
+    vnums_to_dictionary($area_rooms, $vnum_dictionary);
+
+    $area_rooms = $vnum_dictionary;
+
+    foreach ($area_rooms as $vnum=>$room) {
+        $area_vnums[] = $vnum;
+
+        if (!count($room["exits"])) {
+            if (!is_set($room["flags"], "ROOM_DEATH", $STONIA['room_flags'])) {
+                echo("no exits in room #".$vnum." (".$filename.")\n");
+            }
+
             continue;
         }
 
-        foreach ($room["exits"] as $dir=>$to_vnum) {
-            if (array_key_exists($to_vnum, $area["rooms"])) {
+        foreach ($room["exits"] as $index=>$exit) {
+            $to_vnum = $exit["to_room"];
+
+            if (array_key_exists($to_vnum, $area_rooms)) {
                 continue;
             }
 
-            $exit[$to_vnum] = null;
+            $area_exits[$to_vnum] = null;
         }
     }
 
-    for ($j = 0; $j<count($vnums); ++$j) {
-        $area["rooms"][$vnums[$j]]["area"] = $area["header"]["title"];
+    for ($j = 0; $j<count($area_vnums); ++$j) {
+        $rooms[$area_vnums[$j]]["area"] = $area_title;
     }
 
     $areas[$filename] = array(
-        "title" => $area["header"]["title"],
-        "exits" => $exit
+        "title" => $area_title,
+        "exits" => $area_exits
     );
-
-    $rooms += $area["rooms"];
 }
 
 $world = array();
@@ -97,14 +150,4 @@ if ($written === false) {
 }
 else {
     echo($written." bytes written into data.json\n");
-}
-
-function parse_area($filepath) {
-    $rooms = parse_rooms($filepath);
-    $header = parse_header($filepath);
-
-    return array(
-        'header' => $header,
-        'rooms' => $rooms
-    );
 }

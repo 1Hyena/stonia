@@ -1,33 +1,88 @@
 <?php
 
-$stonia = array(
+function POW2($c) {
+    $flags = array(
+        "A" => 1,
+        "B" => 2,
+        "C" => 4,
+        "D" => 8,
+        "E" => 16,
+        "F" => 32,
+        "G" => 64,
+        "H" => 128,
+        "I" => 256,
+        "J" => 512,
+        "K" => 1024,
+        "L" => 2048,
+        "M" => 4096,
+        "N" => 8192,
+        "O" => 16384,
+        "P" => 32768,
+        "Q" => 65536,
+        "R" => 131072,
+        "S" => 262144,
+        "T" => 524288,
+        "U" => 1048576,
+        "V" => 2097152,
+        "W" => 4194304,
+        "X" => 8388608,
+        "Y" => 16777216,
+        "Z" => 33554432,
+        "aa" => 67108864,
+        "bb" => 134217728,
+        "cc" => 268435456,
+        "dd" => 536870912,
+        "ee" => 1073741824
+    );
+
+    if (array_key_exists($c, $flags)) {
+        return $flags[$c];
+    }
+
+    exit("invalid flag '".$c."'\n");
+}
+
+$STONIA = array(
     "exit_info" => array(
-        "EX_ISDOOR" => 1,
-        "EX_CLOSED" => 2,
-        "EX_LOCKED" => 4,
-        "EX_PICKPROOF" => 8,
-        "EX_JAMMED" => 16,
-        "EX_HIDED" => 32,
-        "EX_RUINED" => 64,
-        "EX_CLIMB" => 128,
-        "EX_MOVE" => 256,
-        "EX_NO_PASS_DOOR" => 512,
-        "EX_NOSCAN" => 1024
+        "EX_ISDOOR"         => 1,
+        "EX_CLOSED"         => 2,
+        "EX_LOCKED"         => 4,
+        "EX_PICKPROOF"      => 8,
+        "EX_JAMMED"         => 16,
+        "EX_HIDED"          => 32,
+        "EX_RUINED"         => 64,
+        "EX_CLIMB"          => 128,
+        "EX_MOVE"           => 256,
+        "EX_NO_PASS_DOOR"   => 512,
+        "EX_NOSCAN"         => 1024
+    ),
+    "room_flags" => array(
+        "ROOM_DARK"         => POW2('A'),
+        "ROOM_NO_SUN"       => POW2('B'),
+        "ROOM_NO_MOB"       => POW2('C'),
+        "ROOM_INDOORS"      => POW2('D'),
+        "ROOM_ANTI_MAGIC"   => POW2('I'),
+        "ROOM_PRIVATE"      => POW2('J'),
+        "ROOM_SAFE"         => POW2('K'),
+        "ROOM_SOLITARY"     => POW2('L'),
+        "ROOM_PET_SHOP"     => POW2('M'),
+        "ROOM_NO_RECALL"    => POW2('N'),
+        "ROOM_IMP_ONLY"     => POW2('O'),
+        "ROOM_GODS_ONLY"    => POW2('P'),
+        "ROOM_HEROES_ONLY"  => POW2('Q'),
+        "ROOM_NEWBIES_ONLY" => POW2('R'),
+        "ROOM_LAW"          => POW2('S'),
+        "ROOM_DEATH"        => POW2('T'),
+        "ROOM_IMMDARK"      => POW2('U'),
+        "ROOM_IMMLIGHT"     => POW2('V'),
+        "ROOM_FOG"          => POW2('W'),
+        "ROOM_NO_TELEPORT"  => POW2('X'),
+        "ROOM_SILENCE"      => POW2('Y'),
+        "ROOM_NO_DEATH"     => POW2('Z'),
+        "ROOM_ARENA"        => POW2('aa')
     ),
     "MAX_TRADE" => 5
 );
-
-function is_set($flags, $flag, $dictionary) {
-    if (!array_key_exists($flag, $dictionary)) {
-        exit("dictionary does not contain ".$flag);
-    }
-
-    return $flags & $dictionary[$flag];
-}
-
-function str_cmp($astr, $bstr) {
-    return !strcasecmp($astr, $bstr) ? false : true;
-}
 
 function load($filepath, &$stonia) {
     $filename = basename($filepath);
@@ -40,6 +95,7 @@ function load($filepath, &$stonia) {
     $contents = file_get_contents($filepath);
 
     $fh = array(
+        "filename" => $filename,
         "content" => $contents,
         "position" => 0,
         "length" => strlen($contents)
@@ -50,7 +106,18 @@ function load($filepath, &$stonia) {
         return null;
     }
 
-    $data = array();
+    $data = array(
+        "area" => null,
+        "helps" => array(),
+        "mobiles" => array(),
+        "objects" => array(),
+        "resets" => array(),
+        "rooms" => array(),
+        "shops" => array(),
+        "socials" => array(),
+        "specials" => array(),
+        "mobprogs" => array()
+    );
 
     while (true) {
         $letter = read_letter($fh);
@@ -414,7 +481,7 @@ function load_resets(&$fh, &$stonia) {
             break;
         }
 
-        if ($letter == '*') {
+        if ($letter === '*') {
             read_to_eol($fh);
             continue;
         }
@@ -522,10 +589,10 @@ function load_shops(&$fh, &$stonia) {
 
     while (true) {
         $shop = array(
-            "keeper" => read_number($fh)
+            "vnum" => read_number($fh)
         );
 
-        if ($shop["keeper"] === 0) {
+        if ($shop["vnum"] === 0) {
             break;
         }
 
@@ -833,7 +900,7 @@ function read_string(&$fh) {
         }
     } while (!is_eof($fh));
 
-    exit("premature EOF");
+    exit("premature EOF\n");
 }
 
 function read_word(&$fh) {
@@ -867,7 +934,7 @@ function read_word(&$fh) {
         return $word;
     }
 
-    exit("read_word: #END not found");
+    exit("read_word: #END not found\n");
 }
 
 function read_number(&$fh) {
@@ -889,11 +956,16 @@ function read_number(&$fh) {
     }
 
     if (is_eof($fh)) {
-        exit("read_number: premature EOF");
+        exit("read_number: premature EOF\n");
     }
 
     if (!ctype_digit($c)) {
-        exit( "read_number: bad format.");
+        exit(
+            "read_number: bad format (in ".
+            $fh["filename"]." before '".substr(
+                $fh["content"], $fh["position"], 10
+            )."')\n"
+        );
     }
 
     while (ctype_digit($c)) {
@@ -992,4 +1064,70 @@ function read_to_eol(&$fh) {
     unread_char($fh);
 
     return;
+}
+
+function read_string_eol(&$fh) {
+    $c = '';
+
+    do {
+        $c = read_char($fh);
+    }
+    while (ctype_space($c) && !is_eof($fh));
+
+    if ($c === "\n" || is_eof($fh)) {
+        return "";
+    }
+
+    $string = $c;
+
+    while (true) {
+        $c = read_char($fh);
+
+        if ($c === "\n" || $c === "\r") {
+            break;
+        }
+
+        if (is_eof($fh)) {
+            exit("read_string_eol: unexpected EOF\n");
+        }
+        else {
+            $string.=$c;
+        }
+    }
+
+    return $string;
+}
+
+function is_set($flags, $flag, $dictionary) {
+    if (!array_key_exists($flag, $dictionary)) {
+        exit("dictionary does not contain ".$flag."\n");
+    }
+
+    return $flags & $dictionary[$flag];
+}
+
+function str_cmp($astr, $bstr) {
+    return !strcasecmp($astr, $bstr) ? false : true;
+}
+
+function vnums_to_dictionary($array, &$dictionary) {
+    $collisions = array();
+
+    for ($i=0; $i<count($array); ++$i) {
+        if (!array_key_exists("vnum", $array[$i])) {
+            return "vnums_to_dictionary: vnum missing at index ".$i;
+        }
+
+        $vnum = $array[$i]["vnum"];
+
+        if (array_key_exists($vnum, $dictionary)) {
+            $collisions[$vnum] = true;
+
+            continue;
+        }
+
+        $dictionary[$vnum] = $array[$i];
+    }
+
+    return $collisions;
 }
