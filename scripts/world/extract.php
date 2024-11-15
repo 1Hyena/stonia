@@ -13,29 +13,36 @@ if (!is_dir($areapath)) {
 }
 
 $listpath = $areapath."/area.lst";
+$files = array();
 
 if (!file_exists($listpath)) {
-    exit($listpath." does not exist\n");
+    echo($listpath." does not exist\n");
+
+    $files = glob($areapath."/*.are");
+}
+else {
+    $files = explode("\n", file_get_contents($listpath));
+
+    for ($file_index = 0; $file_index < count($files); ++$file_index) {
+        if ($files[$file_index] === "$"
+        || !strlen($files[$file_index])) {
+            $files[$file_index] = "";
+        }
+        else {
+            $files[$file_index] = $areapath."/".$files[$file_index];
+        }
+    }
 }
 
-$files = explode("\n", file_get_contents($listpath));
-
 for ($file_index = 0; $file_index < count($files); ++$file_index) {
-    if ($files[$file_index] === "$"
-    || !strlen($files[$file_index])) {
-        $files[$file_index] = "";
+    if (!strlen($files[$file_index])) {
         continue;
     }
 
-    $fpath = $areapath."/".$files[$file_index];
-
-    if (!file_exists($fpath)) {
-        echo("area not found: ".$files[$file_index]."\n");
+    if (!file_exists($files[$file_index])) {
+        echo("area not found: ".basename($files[$file_index])."\n");
         $files[$file_index] = "";
-        continue;
     }
-
-    $files[$file_index] = $areapath."/".$files[$file_index];
 }
 
 $files = array_values(array_filter($files, 'strlen'));
