@@ -108,15 +108,15 @@ function load($filepath, &$stonia) {
 
     $data = array(
         "area" => null,
-        "helps" => array(),
-        "mobiles" => array(),
-        "objects" => array(),
-        "resets" => array(),
-        "rooms" => array(),
-        "shops" => array(),
-        "socials" => array(),
-        "specials" => array(),
-        "mobprogs" => array()
+        "helps" => null,
+        "mobiles" => null,
+        "objects" => null,
+        "resets" => null,
+        "rooms" => null,
+        "shops" => null,
+        "socials" => null,
+        "specials" => null,
+        "mobprogs" => null
     );
 
     while (true) {
@@ -361,7 +361,7 @@ function mprog_read_programs(&$fh) {
             $arglist = read_string($fh);
             read_to_eol($fh);
 
-            $comlist = read_string($fh);
+            $comlist = read_space($fh).read_string($fh);
             read_to_eol($fh);
 
             $program["arglist"] = $arglist;
@@ -550,17 +550,17 @@ function load_rooms(&$fh, &$stonia) {
 
                 $exit = array();
 
+                $exit["direction"]    = $door;
                 $exit["description"]  = read_string($fh);
                 $exit["keyword"]      = read_string($fh);
                 $exit["info"]         = read_flag($fh);
                 $exit["key"]          = read_number($fh);
                 $exit["to_room"]      = read_number($fh);
-		        $exit["move_name"]    = null;
-		        $exit["move_percent"] = -1;
 
                 if (is_set($exit["info"], "EX_MOVE", $stonia["exit_info"])) {
-                    $exit["move_percent"] = read_number($fh);
-                    $exit["move_name"]    = read_string($fh);
+                    $exit["move"] = array();
+                    $exit["move"]["percent"] = read_number($fh);
+                    $exit["move"]["name"]    = read_string($fh);
                 }
 
                 $room["exits"][] = $exit;
@@ -619,15 +619,17 @@ function load_socials(&$fh, &$stonia) {
     $socials = array();
 
     while (true) {
-        $social = array();
-
         $temp = read_word($fh);
 
         if (!strcmp($temp, "#0")) {
             break;
         }
 
-        read_to_eol($fh);
+        $social = array(
+            "name" => $temp
+        );
+
+        $social["after_name"] = read_to_eol($fh);
 
         $temp = read_string_eol($fh);
 
@@ -759,7 +761,7 @@ function load_specials(&$fh, &$stonia) {
                 $vnum = read_number($fh);
 
                 $special = array(
-                    "type" => "mob",
+                    "type" => $letter,
                     "vnum" => $vnum
                 );
 
@@ -773,7 +775,7 @@ function load_specials(&$fh, &$stonia) {
                 $vnum = read_number($fh);
 
                 $special = array(
-                    "type" => "obj",
+                    "type" => $letter,
                     "vnum" => $vnum
                 );
 
@@ -787,7 +789,7 @@ function load_specials(&$fh, &$stonia) {
                 $vnum = read_number($fh);
 
                 $special = array(
-                    "type" => "room",
+                    "type" => $letter,
                     "vnum" => $vnum
                 );
 
@@ -873,6 +875,22 @@ function is_eof(&$fh) {
     return $fh["position"] > $fh["length"];
 }
 
+function read_space(&$fh) {
+    $space = '';
+    $char = '';
+
+    do {
+        $space.=$char;
+        $char = read_char($fh);
+    } while (ctype_space($char) && !is_eof($fh));
+
+    if (!is_eof($fh)) {
+        unread_char($fh);
+    }
+
+    return $space;
+}
+
 function read_string(&$fh) {
     $char = '';
 
@@ -894,10 +912,6 @@ function read_string(&$fh) {
         }
 
         $str.=$char;
-
-        if ($char === "\n") {
-            $str.="\r";
-        }
     } while (!is_eof($fh));
 
     exit("premature EOF\n");
@@ -963,7 +977,7 @@ function read_number(&$fh) {
         exit(
             "read_number: bad format (in ".
             $fh["filename"]." before '".substr(
-                $fh["content"], $fh["position"], 10
+                $fh["content"], $fh["position"], 20
             )."')\n"
         );
     }
@@ -1002,7 +1016,7 @@ function read_flag(&$fh) {
             (ord('A') <= ord($c) && ord($c) <= ord('Z')) ||
             (ord('a') <= ord($c) && ord($c) <= ord('z'))
         ) {
-            $number += flag_convert($c);
+            $number |= flag_convert($c);
             $c = read_char($fh);
         }
     }
@@ -1014,7 +1028,7 @@ function read_flag(&$fh) {
     }
 
     if ($c === '|') {
-        $number += read_flag($fh);
+        $number |= read_flag($fh);
     }
     else if ($c !== ' ') {
         unread_char($fh);
@@ -1045,9 +1059,11 @@ function flag_convert($letter) {
 }
 
 function read_to_eol(&$fh) {
+    $str = "";
     $c = "";
 
     do {
+        $str.=$c;
         $c = read_char($fh);
     }
     while ($c != "\n" && $c != "\r" && !is_eof($fh) );
@@ -1058,12 +1074,12 @@ function read_to_eol(&$fh) {
     while (($c == "\n" || $c == "\r") && !is_eof($fh));
 
     if (is_eof($fh)) {
-        return;
+        return $str;
     }
 
     unread_char($fh);
 
-    return;
+    return $str;
 }
 
 function read_string_eol(&$fh) {
@@ -1130,4 +1146,489 @@ function vnums_to_dictionary($array, &$dictionary) {
     }
 
     return $collisions;
+}
+
+function get_vnums_as_dictionary($array) {
+    $dictionary = array();
+
+    $result = vnums_to_dictionary($array, $dictionary);
+
+    if (is_string($result)) {
+        exit($result."\n");
+    }
+
+    return $dictionary;
+}
+
+function save($filepath, $data) {
+    $content = "";
+
+    if ($data["area"] !== null) {
+        $content .= serialize_area($data["area"]);
+    }
+
+    if ($data["helps"] !== null) {
+        $content .= serialize_helps($data["helps"]);
+    }
+
+    if ($data["socials"] !== null) {
+        $content .= serialize_socials($data["socials"]);
+    }
+
+    if ($data["mobiles"] !== null) {
+        $content .= serialize_mobiles($data["mobiles"]);
+    }
+
+    if ($data["mobprogs"] !== null) {
+        $content .= serialize_mobprogs($data["mobprogs"]);
+    }
+
+    if ($data["objects"] !== null) {
+        $content .= serialize_objects($data["objects"]);
+    }
+
+    if ($data["rooms"] !== null) {
+        $content .= serialize_rooms($data["rooms"]);
+    }
+
+    if ($data["resets"] !== null) {
+        $content .= serialize_resets($data["resets"]);
+    }
+
+    if ($data["shops"] !== null) {
+        $content .= serialize_shops($data["shops"]);
+    }
+
+    if ($data["specials"] !== null) {
+        $content .= serialize_specials($data["specials"]);
+    }
+
+    $content .= "#$\n";
+
+    return file_put_contents($filepath, $content);
+}
+
+function serialize_area($data) {
+    return (
+        "#AREA ".$data["name"]."^\n".$data["repop"]."^\n".
+        $data["warpoints"]["white"]." ".$data["warpoints"]["black"]." ".
+        $data["warpoints"]["brown"]." ".$data["warpoints"]["misty"]."\n\n"
+    );
+}
+
+function serialize_mobiles($data) {
+    $content = "#MOBILES\n\n";
+    $mobiles = get_vnums_as_dictionary($data);
+
+    ksort($mobiles);
+
+    foreach ($mobiles as $vnum=>$mob) {
+        $content .= serialize_mobile($mob);
+    }
+
+    $content .= "#0\n\n";
+
+    return $content;
+}
+
+function serialize_mobile($data) {
+    $content = "#".$data["vnum"]."\n";
+
+    $content.=$data["name"]."^\n";
+    $content.=$data["short"]."^\n";
+    $content.=$data["long"]."^\n";
+    $content.=$data["desc"]."^\n";
+    $content.=$data["race"]."^\n";
+    $content.=serialize_flags($data["act"])." ";
+    $content.=serialize_flags($data["affected_by"])." ";
+    $content.=$data["alignment"]."\n";
+    $content.=$data["level"]." ";
+    $content.=$data["hitroll"]." ";
+    $content.=$data["hit"]." ";
+    $content.=$data["mana"]." ";
+    $content.=$data["dam"]." ";
+    $content.=$data["dam_type"]."\n";
+    $content.=$data["ac_pierce"]." ";
+    $content.=$data["ac_bash"]." ";
+    $content.=$data["ac_slash"]." ";
+    $content.=$data["ac_exotic"]."\n";
+    $content.=serialize_flags($data["offensive"])." ";
+    $content.=serialize_flags($data["immune"])." ";
+    $content.=serialize_flags($data["resistant"])." ";
+    $content.=serialize_flags($data["vulnerable"])."\n";
+    $content.=$data["start_pos"]." ";
+    $content.=$data["default_pos"]." ";
+    $content.=$data["sex"]." ";
+    $content.=$data["gold"]."\n";
+    $content.=serialize_flags($data["form"])." ";
+    $content.=serialize_flags($data["parts"])." ";
+    $content.=$data["size"]." ";
+    $content.=$data["exp"]."\n";
+
+    if (array_key_exists("sn", $data)) {
+        foreach ($data["sn"] as $i=>$sn) {
+            $content.="T ".$sn."\n";
+        }
+    }
+
+    if (array_key_exists("mprog", $data)) {
+        for ($i=0; $i<count($data["mprog"]); ++$i) {
+            $program = $data["mprog"][$i];
+
+            $content.=">".$program["name"]." ";
+
+            if (!str_cmp($program["name"], "in_file_prog")) {
+                $content.=$program["file"]."^\n";
+            }
+            else {
+                $content.=$program["arglist"]."^\n";
+                $content.=$program["comlist"]."^\n";
+            }
+        }
+        $content.="|\n";
+    }
+
+    return $content."\n";
+}
+
+function serialize_mobprogs($data) {
+    if (!count($data)) {
+        return "";
+    }
+
+    $content = "#MOBPROGS\n\n";
+
+    for ($i = 0; $i < count($data); ++$i) {
+        $content.="M ".$data[$i]["vnum"]." ".$data[$i]["file"]."\n";
+    }
+
+    return $content."\nS\n\n";
+}
+
+function serialize_resets($data) {
+    if (!count($data)) {
+        return "";
+    }
+
+    $content = "#RESETS\n\n";
+
+    for ($i = 0; $i < count($data); ++$i) {
+        $reset = $data[$i];
+
+        $content.=$reset["command"]." ".sprintf("%5s", $reset["arg1"])." ";
+        $content.=sprintf("%3s", $reset["chance"])." ";
+        $content.=sprintf("%3s", $reset["arg2"]);
+
+        if ($reset["command"] !== 'G' && $reset["command"] !== 'R') {
+            $content.=" ".sprintf("%5s", $reset["arg3"]);
+        }
+
+        if ($reset["command"] === 'D') {
+            $content.=" ".sprintf("%3s", $reset["arg4"]);
+            $content.=" ".sprintf("%3s", $reset["arg5"]);
+        }
+
+        $content.="\n";
+    }
+
+    return $content."\nS\n\n";
+}
+
+function serialize_shops($data) {
+    if (!count($data)) {
+        return "";
+    }
+
+    $content = "#SHOPS\n\n";
+
+    for ($i = 0; $i < count($data); ++$i) {
+        $shop = $data[$i];
+
+        $content.=sprintf("%-5s", $shop["vnum"])." ";
+
+        for ($j = 0; $j < count($shop["buy_type"]); ++$j) {
+            $content.=sprintf("%2s", $shop["buy_type"][$j])." ";
+        }
+
+        $content.=sprintf("%3s", $shop["profit_buy"])." ";
+        $content.=sprintf("%3s", $shop["profit_sell"])." ";
+        $content.=sprintf("%2s", $shop["open_hour"])." ";
+        $content.=sprintf("%2s", $shop["close_hour"])."\n";
+    }
+
+    return $content."\n0\n\n";
+}
+
+function serialize_specials($data) {
+    if (!count($data)) {
+        return "";
+    }
+
+    $content = "#SPECIALS\n\n";
+
+    for ($i = 0; $i < count($data); ++$i) {
+        $special = $data[$i];
+
+        $content.=$special["type"]." ".sprintf("%5s", $special["vnum"])." ";
+        $content.=$special["fun"];
+        $content.="\n";
+    }
+
+    return $content."\nS\n\n";
+}
+
+function serialize_objects($data) {
+    $content = "#OBJECTS\n\n";
+    $objects = get_vnums_as_dictionary($data);
+
+    ksort($objects);
+
+    foreach ($objects as $vnum=>$obj) {
+        $content .= serialize_object($obj);
+    }
+
+    $content .= "#0\n\n";
+
+    return $content;
+}
+
+function serialize_object($data) {
+    $content = "#".$data["vnum"]."\n";
+
+    $content.=$data["name"]."^\n";
+    $content.=$data["short"]."^\n";
+    $content.=$data["description"]."^\n";
+    $content.=$data["material"]." ";
+    $content.=$data["item_type"]." ";
+    $content.=serialize_flags($data["extra_flags"])." ";
+    $content.=serialize_flags($data["wear_flags"])."\n";
+    $content.=$data["v0"]." ";
+    $content.=$data["v1"]." ";
+    $content.=$data["v2"]." ";
+    $content.=$data["v3"]." ";
+    $content.=$data["limit"]."\n";
+    $content.=$data["level"]." ";
+    $content.=$data["weight"]." ";
+    $content.=$data["cost"]." ";
+    $content.=$data["condition"]."\n";
+
+    if (array_key_exists("affects", $data)) {
+        for ($i=0; $i<count($data["affects"]); ++$i) {
+            $aff = $data["affects"][$i];
+
+            $content.="A ".$aff["location"]." ".$aff["modifier"]."\n";
+        }
+    }
+
+    if (array_key_exists("extra_desc", $data)) {
+        for ($i=0; $i<count($data["extra_desc"]); ++$i) {
+            $ed = $data["extra_desc"][$i];
+
+            $content.="E\n".$ed["keyword"]."^\n".$ed["content"]."^\n";
+        }
+    }
+
+    if (array_key_exists("dp", $data)) {
+        $content.="D ".$data["dp"]."\n";
+    }
+
+    return $content."\n";
+}
+
+function serialize_rooms($data) {
+    $content = "#ROOMS\n\n";
+    $rooms = get_vnums_as_dictionary($data);
+
+    ksort($rooms);
+
+    foreach ($rooms as $vnum=>$room) {
+        $content .= serialize_room($room);
+    }
+
+    $content .= "#0\n\n";
+
+    return $content;
+}
+
+function serialize_room($data) {
+    $content = "#".$data["vnum"]."\n";
+
+    $content.=$data["name"]."^\n";
+    $content.=$data["description"]."^\n";
+    $content.=$data["area_index"]." ";
+    $content.=serialize_flags($data["flags"])." ";
+    $content.=$data["sector_type"]."\n";
+
+    for ($i=0; $i<count($data["exits"]); ++$i) {
+        $exit = $data["exits"][$i];
+
+        $content.="D".$exit["direction"]."\n";
+        $content.=$exit["description"]."^\n";
+        $content.=$exit["keyword"]."^\n";
+        $content.=serialize_flags($exit["info"])." ";
+        $content.=$exit["key"]." ".$exit["to_room"];
+
+        if (array_key_exists("move", $exit)) {
+            $content.=" ".$exit["move"]["percent"]."\n";
+            $content.=$exit["move"]["name"]."^";
+        }
+
+        $content.="\n";
+    }
+
+    for ($i=0; $i<count($data["extra_desc"]); ++$i) {
+        $ed = $data["extra_desc"][$i];
+        $content.="E\n".$exit["keyword"]."^\n".$exit["description"]."^\n";
+    }
+
+    return $content."S\n\n";
+}
+
+function serialize_helps($data) {
+    if (!count($data)) {
+        return "";
+    }
+
+    $content = "#HELPS\n\n";
+
+    for ($i = 0; $i < count($data); ++$i) {
+        $content.=$data[$i]["level"]." ".$data[$i]["keyword"]."^\n";
+        $content.=$data[$i]["text"]."^\n\n";
+    }
+
+    return $content."0 $^\n\n";
+}
+
+function serialize_socials($data) {
+    if (!count($data)) {
+        return "";
+    }
+
+    $content = "#SOCIALS\n\n";
+
+    for ($i = 0; $i < count($data); ++$i) {
+        $social = $data[$i];
+
+        $content.=$social["name"].$social["after_name"]."\n";
+
+        if (!array_key_exists("char_no_arg", $social)) {
+            $content.="#\n\n";
+            continue;
+        }
+
+        $content.=(
+            $social["char_no_arg"] === null ? "$" : $social["char_no_arg"]
+        )."\n";
+
+        if (!array_key_exists("others_no_arg", $social)) {
+            $content.="#\n\n";
+            continue;
+        }
+
+        $content.=(
+            $social["others_no_arg"] === null ? "$" : $social["others_no_arg"]
+        )."\n";
+
+        if (!array_key_exists("char_found", $social)) {
+            $content.="#\n\n";
+            continue;
+        }
+
+        $content.=(
+            $social["char_found"] === null ? "$" : $social["char_found"]
+        )."\n";
+
+        if (!array_key_exists("others_found", $social)) {
+            $content.="#\n\n";
+            continue;
+        }
+
+        $content.=(
+            $social["others_found"] === null ? "$" : $social["others_found"]
+        )."\n";
+
+        if (!array_key_exists("vict_found", $social)) {
+            $content.="#\n\n";
+            continue;
+        }
+
+        $content.=(
+            $social["vict_found"] === null ? "$" : $social["vict_found"]
+        )."\n";
+
+        if (!array_key_exists("char_not_found", $social)) {
+            $content.="#\n\n";
+            continue;
+        }
+
+        $content.=(
+            $social["char_not_found"] === null ? "$" : $social["char_not_found"]
+        )."\n";
+
+        if (!array_key_exists("char_auto", $social)) {
+            $content.="#\n\n";
+            continue;
+        }
+
+        $content.=(
+            $social["char_auto"] === null ? "$" : $social["char_auto"]
+        )."\n";
+
+        if (!array_key_exists("others_auto", $social)) {
+            $content.="#\n\n";
+            continue;
+        }
+
+        $content.=(
+            $social["others_auto"] === null ? "$" : $social["others_auto"]
+        )."\n\n";
+    }
+
+    return $content."#0\n\n";
+}
+
+function serialize_flags($value) {
+    $flags = array(
+        1 => "A",
+        2 => "B",
+        4 => "C",
+        8 => "D",
+        16 => "E",
+        32 => "F",
+        64 => "G",
+        128 => "H",
+        256 => "I",
+        512 => "J",
+        1024 => "K",
+        2048 =>"L",
+        4096 => "M",
+        8192 => "N",
+        16384 => "O",
+        32768 => "P",
+        65536 => "Q",
+        131072 => "R",
+        262144 => "S",
+        524288 => "T",
+        1048576 => "U",
+        2097152 => "V",
+        4194304 => "W",
+        8388608 => "X",
+        16777216 => "Y",
+        33554432 => "Z",
+        67108864 => "aa",
+        134217728 => "bb",
+        268435456 => "cc",
+        536870912 => "dd",
+        1073741824 => "ee"
+    );
+
+    $content = "";
+
+    foreach ($flags as $number=>$letter) {
+        if ($number & $value) {
+            $content.=$letter;
+        }
+    }
+
+    return strlen($content) > 0 ? $content : "0";
 }
