@@ -1478,7 +1478,7 @@ function serialize_room($data) {
 
     for ($i=0; $i<count($data["extra_desc"]); ++$i) {
         $ed = $data["extra_desc"][$i];
-        $content.="E\n".$exit["keyword"]."^\n".$exit["description"]."^\n";
+        $content.="E\n".$ed["keyword"]."^\n".$ed["description"]."^\n";
     }
 
     return $content."S\n\n";
